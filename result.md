@@ -1,0 +1,2738 @@
+* `Microsoft.Extensions.AmbientMetadata.ApplicationMetadata`
+  * ApplicationName
+  * BuildVersion
+  * DeploymentRing
+  * EnvironmentName
+* `Microsoft.Extensions.AsyncState.AsyncStateToken`
+  * Equals
+  * GetHashCode
+* `Microsoft.Extensions.AsyncState.IAsyncContext<T>`
+  * Get
+  * Set
+  * TryGet
+* `Microsoft.Extensions.AsyncState.IAsyncState`
+  * Get
+  * Initialize
+  * RegisterAsyncContext
+  * Reset
+  * Set
+  * TryGet
+* `Microsoft.Extensions.Compliance.Classification.DataClassification`
+  * Equals
+  * GetHashCode
+  * None
+  * TaxonomyName
+  * ToString
+  * Unknown
+  * Value
+* `Microsoft.Extensions.Compliance.Classification.DataClassificationAttribute`
+  * Classification
+  * Notes
+* `Microsoft.Extensions.Compliance.Classification.DataClassificationSet`
+  * Equals
+  * FromDataClassification
+  * GetHashCode
+  * ToString
+  * Union
+* `Microsoft.Extensions.Compliance.Classification.NoDataClassificationAttribute`
+* `Microsoft.Extensions.Compliance.Classification.UnknownDataClassificationAttribute`
+* `Microsoft.Extensions.Compliance.Redaction.ErasingRedactor`
+  * GetRedactedLength
+  * Instance
+  * Redact
+* `Microsoft.Extensions.Compliance.Redaction.FakeRedactionBuilderExtensions`
+  * SetFakeRedactor
+* `Microsoft.Extensions.Compliance.Redaction.HmacRedactorOptions`
+  * Key
+  * KeyId
+* `Microsoft.Extensions.Compliance.Redaction.IRedactionBuilder`
+  * Services
+  * SetFallbackRedactor<T>
+  * SetRedactor<T>
+* `Microsoft.Extensions.Compliance.Redaction.IRedactorProvider`
+  * GetRedactor
+* `Microsoft.Extensions.Compliance.Redaction.NullRedactorProvider`
+  * GetRedactor
+* `Microsoft.Extensions.Compliance.Redaction.RedactionExtensions`
+  * SetHmacRedactor
+* `Microsoft.Extensions.Compliance.Redaction.Redactor`
+  * GetRedactedLength
+  * Redact
+  * Redact<T>
+  * TryRedact<T>
+* `Microsoft.Extensions.Compliance.Testing.FakeRedactionCollector`
+  * AllRedactedData
+  * AllRedactorRequests
+  * LastRedactedData
+  * LastRedactorRequested
+* `Microsoft.Extensions.Compliance.Testing.FakeRedactor`
+  * Create
+  * EventCollector
+  * GetRedactedLength
+  * Redact
+* `Microsoft.Extensions.Compliance.Testing.FakeRedactorOptions`
+  * RedactionFormat
+* `Microsoft.Extensions.Compliance.Testing.FakeRedactorProvider`
+  * Collector
+  * GetRedactor
+* `Microsoft.Extensions.Compliance.Testing.FakeTaxonomy`
+  * PrivateData
+  * PublicData
+  * TaxonomyName
+* `Microsoft.Extensions.Compliance.Testing.PrivateDataAttribute`
+* `Microsoft.Extensions.Compliance.Testing.PublicDataAttribute`
+* `Microsoft.Extensions.Compliance.Testing.RedactedData`
+  * Equals
+  * GetHashCode
+  * Original
+  * Redacted
+  * SequenceNumber
+* `Microsoft.Extensions.Compliance.Testing.RedactorRequested`
+  * DataClassifications
+  * Equals
+  * GetHashCode
+  * SequenceNumber
+* `Microsoft.Extensions.Configuration.ApplicationMetadataConfigurationBuilderExtensions`
+  * AddApplicationMetadata
+* `Microsoft.Extensions.DependencyInjection.ActivatorUtilities`
+  * CreateFactory<T>
+* `Microsoft.Extensions.DependencyInjection.ApplicationEnricherServiceCollectionExtensions`
+  * AddServiceLogEnricher
+* `Microsoft.Extensions.DependencyInjection.ApplicationMetadataServiceCollectionExtensions`
+  * AddApplicationMetadata
+* `Microsoft.Extensions.DependencyInjection.AsyncStateExtensions`
+  * AddAsyncState
+* `Microsoft.Extensions.DependencyInjection.AutoActivationExtensions`
+  * ActivateKeyedSingleton
+  * ActivateKeyedSingleton<TService>
+  * ActivateSingleton
+  * ActivateSingleton<TService>
+  * AddActivatedKeyedSingleton
+  * AddActivatedKeyedSingleton<TService>
+  * AddActivatedKeyedSingleton<TService,TImplementation>
+  * AddActivatedSingleton
+  * AddActivatedSingleton<TService>
+  * AddActivatedSingleton<TService,TImplementation>
+  * TryAddActivatedKeyedSingleton
+  * TryAddActivatedKeyedSingleton<TService>
+  * TryAddActivatedKeyedSingleton<TService,TImplementation>
+  * TryAddActivatedSingleton
+  * TryAddActivatedSingleton<TService>
+  * TryAddActivatedSingleton<TService,TImplementation>
+* `Microsoft.Extensions.DependencyInjection.CommonHealthChecksExtensions`
+  * AddApplicationLifecycleHealthCheck
+  * AddManualHealthCheck
+  * AddTelemetryHealthCheckPublisher
+  * ReportHealthy
+  * ReportUnhealthy
+* `Microsoft.Extensions.DependencyInjection.ContextualOptionsServiceCollectionExtensions`
+  * AddContextualOptions
+  * Configure<TOptions>
+  * PostConfigure<TOptions>
+  * PostConfigureAll<TOptions>
+  * ValidateContextualOptions<TOptions>
+* `Microsoft.Extensions.DependencyInjection.EnrichmentServiceCollectionExtensions`
+  * AddLogEnricher
+  * AddLogEnricher<T>
+  * AddStaticLogEnricher
+  * AddStaticLogEnricher<T>
+* `Microsoft.Extensions.DependencyInjection.ExceptionSummarizationServiceCollectionExtensions`
+  * AddExceptionSummarizer
+* `Microsoft.Extensions.DependencyInjection.FakeLoggerServiceCollectionExtensions`
+  * AddFakeLogging
+* `Microsoft.Extensions.DependencyInjection.FakeRedactionServiceCollectionExtensions`
+  * AddFakeRedaction
+* `Microsoft.Extensions.DependencyInjection.FromKeyedServicesAttribute`
+  * Key
+* `Microsoft.Extensions.DependencyInjection.HttpClientBuilderExtensions`
+  * AddDefaultLogger
+  * AddLogger
+  * AddLogger<TLogger>
+  * ConfigureAdditionalHttpMessageHandlers
+  * ConfigurePrimaryHttpMessageHandler
+  * RemoveAllLoggers
+  * UseSocketsHttpHandler
+* `Microsoft.Extensions.DependencyInjection.HttpClientFactoryServiceCollectionExtensions`
+  * ConfigureHttpClientDefaults
+* `Microsoft.Extensions.DependencyInjection.HttpClientLatencyTelemetryExtensions`
+  * AddHttpClientLatencyTelemetry
+* `Microsoft.Extensions.DependencyInjection.HttpClientLoggingHttpClientBuilderExtensions`
+  * AddExtendedHttpClientLogging
+* `Microsoft.Extensions.DependencyInjection.HttpClientLoggingServiceCollectionExtensions`
+  * AddExtendedHttpClientLogging
+  * AddHttpClientLogEnricher<T>
+* `Microsoft.Extensions.DependencyInjection.HttpDiagnosticsServiceCollectionExtensions`
+  * AddDownstreamDependencyMetadata
+  * AddDownstreamDependencyMetadata<T>
+* `Microsoft.Extensions.DependencyInjection.IKeyedServiceProvider`
+  * GetKeyedService
+  * GetRequiredKeyedService
+* `Microsoft.Extensions.DependencyInjection.IServiceProviderIsKeyedService`
+  * IsKeyedService
+* `Microsoft.Extensions.DependencyInjection.ISocketsHttpHandlerBuilder`
+  * Name
+  * Services
+* `Microsoft.Extensions.DependencyInjection.KeyedService`
+  * AnyKey
+* `Microsoft.Extensions.DependencyInjection.KubernetesProbesExtensions`
+  * AddKubernetesProbes
+* `Microsoft.Extensions.DependencyInjection.LatencyConsoleExtensions`
+  * AddConsoleLatencyDataExporter
+* `Microsoft.Extensions.DependencyInjection.LatencyContextExtensions`
+  * AddLatencyContext
+* `Microsoft.Extensions.DependencyInjection.LatencyRegistryServiceCollectionExtensions`
+  * RegisterCheckpointNames
+  * RegisterMeasureNames
+  * RegisterTagNames
+* `Microsoft.Extensions.DependencyInjection.MetricsServiceExtensions`
+  * AddMetrics
+* `Microsoft.Extensions.DependencyInjection.NullLatencyContextServiceCollectionExtensions`
+  * AddNullLatencyContext
+* `Microsoft.Extensions.DependencyInjection.ObjectPoolServiceCollectionExtensions`
+  * AddPooled<TService>
+  * AddPooled<TService,TImplementation>
+  * ConfigurePool<TService>
+  * ConfigurePools
+* `Microsoft.Extensions.DependencyInjection.OptionsServiceCollectionExtensions`
+  * AddOptionsWithValidateOnStart<TOptions>
+  * AddOptionsWithValidateOnStart<TOptions,TValidateOptions>
+* `Microsoft.Extensions.DependencyInjection.ProcessEnricherServiceCollectionExtensions`
+  * AddProcessLogEnricher
+* `Microsoft.Extensions.DependencyInjection.RedactionServiceCollectionExtensions`
+  * AddRedaction
+* `Microsoft.Extensions.DependencyInjection.ResilienceHttpClientBuilderExtensions`
+  * AddResilienceHandler
+  * AddStandardHedgingHandler
+  * AddStandardResilienceHandler
+* `Microsoft.Extensions.DependencyInjection.ResilienceServiceCollectionExtensions`
+  * AddResilienceEnricher
+* `Microsoft.Extensions.DependencyInjection.ResourceMonitoringServiceCollectionExtensions`
+  * AddResourceMonitoring
+* `Microsoft.Extensions.DependencyInjection.ResourceUtilizationHealthCheckExtensions`
+  * AddResourceUtilizationHealthCheck
+* `Microsoft.Extensions.DependencyInjection.ServiceCollectionServiceExtensions`
+  * AddKeyedScoped
+  * AddKeyedScoped<TService>
+  * AddKeyedScoped<TService,TImplementation>
+  * AddKeyedSingleton
+  * AddKeyedSingleton<TService>
+  * AddKeyedSingleton<TService,TImplementation>
+  * AddKeyedTransient
+  * AddKeyedTransient<TService>
+  * AddKeyedTransient<TService,TImplementation>
+* `Microsoft.Extensions.DependencyInjection.ServiceDescriptor`
+  * DescribeKeyed
+  * IsKeyedService
+  * KeyedImplementationFactory
+  * KeyedImplementationInstance
+  * KeyedImplementationType
+  * KeyedScoped
+  * KeyedScoped<TService>
+  * KeyedScoped<TService,TImplementation>
+  * KeyedSingleton
+  * KeyedSingleton<TService>
+  * KeyedSingleton<TService,TImplementation>
+  * KeyedTransient
+  * KeyedTransient<TService>
+  * KeyedTransient<TService,TImplementation>
+  * ServiceKey
+* `Microsoft.Extensions.DependencyInjection.ServiceKeyAttribute`
+* `Microsoft.Extensions.DependencyInjection.ServiceProvider`
+  * GetKeyedService
+  * GetRequiredKeyedService
+* `Microsoft.Extensions.DependencyInjection.ServiceProviderKeyedServiceExtensions`
+  * GetKeyedService<T>
+  * GetKeyedServices
+  * GetKeyedServices<T>
+  * GetRequiredKeyedService
+  * GetRequiredKeyedService<T>
+* `Microsoft.Extensions.DependencyInjection.SocketsHttpHandlerBuilderExtensions`
+  * Configure
+* `Microsoft.Extensions.DependencyInjection.Extensions.ServiceCollectionDescriptorExtensions`
+  * RemoveAllKeyed
+  * RemoveAllKeyed<T>
+  * TryAddKeyedScoped
+  * TryAddKeyedScoped<TService>
+  * TryAddKeyedScoped<TService,TImplementation>
+  * TryAddKeyedSingleton
+  * TryAddKeyedSingleton<TService>
+  * TryAddKeyedSingleton<TService,TImplementation>
+  * TryAddKeyedTransient
+  * TryAddKeyedTransient<TService>
+  * TryAddKeyedTransient<TService,TImplementation>
+* `Microsoft.Extensions.Diagnostics.Enrichment.ApplicationEnricherTags`
+  * ApplicationName
+  * BuildVersion
+  * DeploymentRing
+  * DimensionNames
+  * EnvironmentName
+* `Microsoft.Extensions.Diagnostics.Enrichment.ApplicationLogEnricherOptions`
+  * ApplicationName
+  * BuildVersion
+  * DeploymentRing
+  * EnvironmentName
+* `Microsoft.Extensions.Diagnostics.Enrichment.IEnrichmentTagCollector`
+  * Add
+* `Microsoft.Extensions.Diagnostics.Enrichment.ILogEnricher`
+  * Enrich
+* `Microsoft.Extensions.Diagnostics.Enrichment.IStaticLogEnricher`
+  * Enrich
+* `Microsoft.Extensions.Diagnostics.Enrichment.ProcessEnricherTagNames`
+  * DimensionNames
+  * ProcessId
+  * ThreadId
+* `Microsoft.Extensions.Diagnostics.Enrichment.ProcessLogEnricherOptions`
+  * ProcessId
+  * ThreadId
+* `Microsoft.Extensions.Diagnostics.ExceptionSummarization.ExceptionSummarizationBuilderExtensions`
+  * AddHttpProvider
+* `Microsoft.Extensions.Diagnostics.ExceptionSummarization.ExceptionSummary`
+  * AdditionalDetails
+  * Description
+  * Equals
+  * ExceptionType
+  * GetHashCode
+  * ToString
+* `Microsoft.Extensions.Diagnostics.ExceptionSummarization.IExceptionSummarizationBuilder`
+  * AddProvider<T>
+  * Services
+* `Microsoft.Extensions.Diagnostics.ExceptionSummarization.IExceptionSummarizer`
+  * Summarize
+* `Microsoft.Extensions.Diagnostics.ExceptionSummarization.IExceptionSummaryProvider`
+  * Describe
+  * Descriptions
+  * SupportedExceptionTypes
+* `Microsoft.Extensions.Diagnostics.HealthChecks.HealthCheckRegistration`
+  * Delay
+  * Period
+* `Microsoft.Extensions.Diagnostics.HealthChecks.ResourceUsageThresholds`
+  * DegradedUtilizationPercentage
+  * UnhealthyUtilizationPercentage
+* `Microsoft.Extensions.Diagnostics.HealthChecks.ResourceUtilizationHealthCheckOptions`
+  * CpuThresholds
+  * MemoryThresholds
+  * SamplingWindow
+* `Microsoft.Extensions.Diagnostics.Latency.Checkpoint`
+  * Elapsed
+  * Equals
+  * Frequency
+  * GetHashCode
+  * Name
+* `Microsoft.Extensions.Diagnostics.Latency.CheckpointToken`
+  * Name
+  * Position
+* `Microsoft.Extensions.Diagnostics.Latency.ILatencyContext`
+  * AddCheckpoint
+  * AddMeasure
+  * Freeze
+  * LatencyData
+  * RecordMeasure
+  * SetTag
+* `Microsoft.Extensions.Diagnostics.Latency.ILatencyContextProvider`
+  * CreateContext
+* `Microsoft.Extensions.Diagnostics.Latency.ILatencyContextTokenIssuer`
+  * GetCheckpointToken
+  * GetMeasureToken
+  * GetTagToken
+* `Microsoft.Extensions.Diagnostics.Latency.ILatencyDataExporter`
+  * ExportAsync
+* `Microsoft.Extensions.Diagnostics.Latency.LatencyConsoleOptions`
+  * OutputCheckpoints
+  * OutputMeasures
+  * OutputTags
+* `Microsoft.Extensions.Diagnostics.Latency.LatencyContextOptions`
+  * ThrowOnUnregisteredNames
+* `Microsoft.Extensions.Diagnostics.Latency.LatencyContextRegistrationOptions`
+  * CheckpointNames
+  * MeasureNames
+  * TagNames
+* `Microsoft.Extensions.Diagnostics.Latency.LatencyData`
+  * Checkpoints
+  * DurationTimestamp
+  * DurationTimestampFrequency
+  * Measures
+  * Tags
+* `Microsoft.Extensions.Diagnostics.Latency.Measure`
+  * Equals
+  * GetHashCode
+  * Name
+  * Value
+* `Microsoft.Extensions.Diagnostics.Latency.MeasureToken`
+  * Name
+  * Position
+* `Microsoft.Extensions.Diagnostics.Latency.Tag`
+  * Name
+  * Value
+* `Microsoft.Extensions.Diagnostics.Latency.TagToken`
+  * Name
+  * Position
+* `Microsoft.Extensions.Diagnostics.Metrics.ConsoleMetrics`
+  * DebugListenerName
+* `Microsoft.Extensions.Diagnostics.Metrics.CounterAttribute`
+  * Name
+  * TagNames
+  * Type
+* `Microsoft.Extensions.Diagnostics.Metrics.CounterAttribute<T>`
+  * Name
+  * TagNames
+  * Type
+* `Microsoft.Extensions.Diagnostics.Metrics.GaugeAttribute`
+  * Name
+  * TagNames
+  * Type
+* `Microsoft.Extensions.Diagnostics.Metrics.HistogramAttribute`
+  * Name
+  * TagNames
+  * Type
+* `Microsoft.Extensions.Diagnostics.Metrics.HistogramAttribute<T>`
+  * Name
+  * TagNames
+  * Type
+* `Microsoft.Extensions.Diagnostics.Metrics.IMetricsBuilder`
+  * Services
+* `Microsoft.Extensions.Diagnostics.Metrics.IMetricsListener`
+  * GetMeasurementHandlers
+  * Initialize
+  * InstrumentPublished
+  * MeasurementsCompleted
+  * Name
+* `Microsoft.Extensions.Diagnostics.Metrics.InstrumentRule`
+  * Enable
+  * InstrumentName
+  * ListenerName
+  * MeterName
+  * Scopes
+* `Microsoft.Extensions.Diagnostics.Metrics.IObservableInstrumentsSource`
+  * RecordObservableInstruments
+* `Microsoft.Extensions.Diagnostics.Metrics.MeasurementHandlers`
+  * ByteHandler
+  * DecimalHandler
+  * DoubleHandler
+  * FloatHandler
+  * IntHandler
+  * LongHandler
+  * ShortHandler
+* `Microsoft.Extensions.Diagnostics.Metrics.MeterScope`
+  * Global
+  * Local
+  * None
+* `Microsoft.Extensions.Diagnostics.Metrics.MetricsBuilderConfigurationExtensions`
+  * AddConfiguration
+* `Microsoft.Extensions.Diagnostics.Metrics.MetricsBuilderConsoleExtensions`
+  * AddDebugConsole
+* `Microsoft.Extensions.Diagnostics.Metrics.MetricsBuilderExtensions`
+  * AddListener
+  * AddListener<T>
+  * ClearListeners
+  * DisableMetrics
+  * EnableMetrics
+* `Microsoft.Extensions.Diagnostics.Metrics.MetricsOptions`
+  * Rules
+* `Microsoft.Extensions.Diagnostics.Metrics.TagNameAttribute`
+  * Name
+* `Microsoft.Extensions.Diagnostics.Metrics.Configuration.IMetricListenerConfigurationFactory`
+  * GetConfiguration
+* `Microsoft.Extensions.Diagnostics.Probes.KubernetesProbesOptions`
+  * LivenessProbe
+  * ReadinessProbe
+  * StartupProbe
+* `Microsoft.Extensions.Diagnostics.Probes.ProbeTags`
+  * Liveness
+  * Readiness
+  * Startup
+* `Microsoft.Extensions.Diagnostics.ResourceMonitoring.IResourceMonitor`
+  * GetUtilization
+* `Microsoft.Extensions.Diagnostics.ResourceMonitoring.IResourceMonitorBuilder`
+  * AddPublisher<T>
+  * Services
+* `Microsoft.Extensions.Diagnostics.ResourceMonitoring.IResourceUtilizationPublisher`
+  * PublishAsync
+* `Microsoft.Extensions.Diagnostics.ResourceMonitoring.ResourceMonitoringBuilderExtensions`
+  * ConfigureMonitor
+* `Microsoft.Extensions.Diagnostics.ResourceMonitoring.ResourceMonitoringOptions`
+  * CollectionWindow
+  * CpuConsumptionRefreshInterval
+  * MemoryConsumptionRefreshInterval
+  * PublishingWindow
+  * SamplingInterval
+  * SourceIpAddresses
+* `Microsoft.Extensions.Diagnostics.ResourceMonitoring.ResourceUtilization`
+  * CpuUsedPercentage
+  * MemoryUsedInBytes
+  * MemoryUsedPercentage
+  * SystemResources
+* `Microsoft.Extensions.Diagnostics.ResourceMonitoring.SystemResources`
+  * GuaranteedCpuUnits
+  * GuaranteedMemoryInBytes
+  * MaximumCpuUnits
+  * MaximumMemoryInBytes
+* `Microsoft.Extensions.Hosting.ApplicationMetadataHostBuilderExtensions`
+  * UseApplicationMetadata
+* `Microsoft.Extensions.Hosting.FakeHostingExtensions`
+  * AddFakeLoggingOutputSink
+  * Configure
+  * ConfigureAppConfiguration
+  * ConfigureHostConfiguration
+  * GetFakeLogCollector
+  * GetFakeRedactionCollector
+  * StartAndStopAsync
+* `Microsoft.Extensions.Hosting.Host`
+  * CreateApplicationBuilder
+  * CreateEmptyApplicationBuilder
+* `Microsoft.Extensions.Hosting.HostApplicationBuilder`
+  * Metrics
+  * Microsoft.Extensions.Hosting.IHostApplicationBuilder.Configuration
+  * Microsoft.Extensions.Hosting.IHostApplicationBuilder.Properties
+* `Microsoft.Extensions.Hosting.HostingHostBuilderExtensions`
+  * ConfigureMetrics
+* `Microsoft.Extensions.Hosting.HostOptions`
+  * ServicesStartConcurrently
+  * ServicesStopConcurrently
+  * StartupTimeout
+* `Microsoft.Extensions.Hosting.IHostApplicationBuilder`
+  * Configuration
+  * ConfigureContainer<TContainerBuilder>
+  * Environment
+  * Logging
+  * Metrics
+  * Properties
+  * Services
+* `Microsoft.Extensions.Hosting.IHostedLifecycleService`
+  * StartedAsync
+  * StartingAsync
+  * StoppedAsync
+  * StoppingAsync
+* `Microsoft.Extensions.Hosting.SystemdHostBuilderExtensions`
+  * AddSystemd
+* `Microsoft.Extensions.Hosting.WindowsServiceLifetimeHostBuilderExtensions`
+  * AddWindowsService
+  * UseWindowsService
+* `Microsoft.Extensions.Hosting.WindowsServiceLifetimeOptions`
+  * ServiceName
+* `Microsoft.Extensions.Hosting.Testing.FakeHost`
+  * CreateBuilder
+  * Dispose
+  * Services
+  * StartAsync
+  * StopAsync
+* `Microsoft.Extensions.Hosting.Testing.FakeHostOptions`
+  * FakeLogging
+  * FakeRedaction
+  * ShutDownTimeout
+  * StartUpTimeout
+  * TimeToLive
+  * ValidateOnBuild
+  * ValidateScopes
+* `Microsoft.Extensions.Hosting.WindowsServices.WindowsServiceLifetime`
+  * OnShutdown
+* `Microsoft.Extensions.Http.Diagnostics.HttpRouteParameterRedactionMode`
+  * Loose
+  * None
+  * Strict
+* `Microsoft.Extensions.Http.Diagnostics.IDownstreamDependencyMetadata`
+  * DependencyName
+  * RequestMetadata
+  * UniqueHostNameSuffixes
+* `Microsoft.Extensions.Http.Diagnostics.IOutgoingRequestContext`
+  * RequestMetadata
+  * SetRequestMetadata
+* `Microsoft.Extensions.Http.Diagnostics.RequestMetadata`
+  * DependencyName
+  * MethodType
+  * RequestName
+  * RequestRoute
+* `Microsoft.Extensions.Http.Diagnostics.TelemetryConstants`
+  * ClientApplicationNameHeader
+  * Redacted
+  * RequestMetadataKey
+  * ServerApplicationNameHeader
+  * Unknown
+* `Microsoft.Extensions.Http.Latency.HttpClientLatencyTelemetryOptions`
+  * EnableDetailedLatencyBreakdown
+* `Microsoft.Extensions.Http.Logging.HttpClientLoggingTagNames`
+  * Duration
+  * Host
+  * Method
+  * Path
+  * RequestBody
+  * RequestHeaderPrefix
+  * ResponseBody
+  * ResponseHeaderPrefix
+  * StatusCode
+  * TagNames
+* `Microsoft.Extensions.Http.Logging.IHttpClientAsyncLogger`
+  * LogRequestFailedAsync
+  * LogRequestStartAsync
+  * LogRequestStopAsync
+* `Microsoft.Extensions.Http.Logging.IHttpClientLogEnricher`
+  * Enrich
+* `Microsoft.Extensions.Http.Logging.IHttpClientLogger`
+  * LogRequestFailed
+  * LogRequestStart
+  * LogRequestStop
+* `Microsoft.Extensions.Http.Logging.LoggingHttpMessageHandler`
+  * Send
+* `Microsoft.Extensions.Http.Logging.LoggingOptions`
+  * BodyReadTimeout
+  * BodySizeLimit
+  * LogBody
+  * LogRequestStart
+  * RequestBodyContentTypes
+  * RequestHeadersDataClasses
+  * RequestPathLoggingMode
+  * RequestPathParameterRedactionMode
+  * ResponseBodyContentTypes
+  * ResponseHeadersDataClasses
+  * RouteParameterDataClasses
+* `Microsoft.Extensions.Http.Logging.LoggingScopeHttpMessageHandler`
+  * Send
+* `Microsoft.Extensions.Http.Logging.OutgoingPathLoggingMode`
+  * Formatted
+  * Structured
+* `Microsoft.Extensions.Http.Resilience.HedgingEndpointOptions`
+  * CircuitBreaker
+  * RateLimiter
+  * Timeout
+* `Microsoft.Extensions.Http.Resilience.HttpCircuitBreakerStrategyOptions`
+* `Microsoft.Extensions.Http.Resilience.HttpClientHedgingResiliencePredicates`
+  * IsTransient
+* `Microsoft.Extensions.Http.Resilience.HttpClientResiliencePredicates`
+  * IsTransient
+* `Microsoft.Extensions.Http.Resilience.HttpHedgingStrategyOptions`
+* `Microsoft.Extensions.Http.Resilience.HttpRateLimiterStrategyOptions`
+* `Microsoft.Extensions.Http.Resilience.HttpResiliencePipelineBuilderExtensions`
+  * SelectPipelineBy
+  * SelectPipelineByAuthority
+* `Microsoft.Extensions.Http.Resilience.HttpRetryStrategyOptions`
+  * ShouldRetryAfterHeader
+* `Microsoft.Extensions.Http.Resilience.HttpStandardHedgingResilienceOptions`
+  * Endpoint
+  * Hedging
+  * TotalRequestTimeout
+* `Microsoft.Extensions.Http.Resilience.HttpStandardResilienceOptions`
+  * AttemptTimeout
+  * CircuitBreaker
+  * RateLimiter
+  * Retry
+  * TotalRequestTimeout
+* `Microsoft.Extensions.Http.Resilience.HttpStandardResiliencePipelineBuilderExtensions`
+  * Configure
+  * SelectPipelineBy
+  * SelectPipelineByAuthority
+* `Microsoft.Extensions.Http.Resilience.HttpTimeoutStrategyOptions`
+* `Microsoft.Extensions.Http.Resilience.IHttpResiliencePipelineBuilder`
+  * PipelineName
+  * Services
+* `Microsoft.Extensions.Http.Resilience.IHttpStandardResiliencePipelineBuilder`
+  * PipelineName
+  * Services
+* `Microsoft.Extensions.Http.Resilience.IRoutingStrategyBuilder`
+  * Name
+  * Services
+* `Microsoft.Extensions.Http.Resilience.IStandardHedgingHandlerBuilder`
+  * Name
+  * RoutingStrategyBuilder
+  * Services
+* `Microsoft.Extensions.Http.Resilience.OrderedGroupsRoutingOptions`
+  * Groups
+* `Microsoft.Extensions.Http.Resilience.ResilienceHandlerContext`
+  * BuilderName
+  * EnableReloads<TOptions>
+  * GetOptions<TOptions>
+  * InstanceName
+  * OnPipelineDisposed
+  * ServiceProvider
+* `Microsoft.Extensions.Http.Resilience.RoutingStrategyBuilderExtensions`
+  * ConfigureOrderedGroups
+  * ConfigureWeightedGroups
+* `Microsoft.Extensions.Http.Resilience.StandardHedgingHandlerBuilderExtensions`
+  * Configure
+  * SelectPipelineBy
+  * SelectPipelineByAuthority
+* `Microsoft.Extensions.Http.Resilience.UriEndpoint`
+  * Uri
+* `Microsoft.Extensions.Http.Resilience.UriEndpointGroup`
+  * Endpoints
+* `Microsoft.Extensions.Http.Resilience.WeightedGroupSelectionMode`
+  * EveryAttempt
+  * InitialAttempt
+* `Microsoft.Extensions.Http.Resilience.WeightedGroupsRoutingOptions`
+  * Groups
+  * SelectionMode
+* `Microsoft.Extensions.Http.Resilience.WeightedUriEndpoint`
+  * Uri
+  * Weight
+* `Microsoft.Extensions.Http.Resilience.WeightedUriEndpointGroup`
+  * Weight
+* `Microsoft.Extensions.Logging.FakeLoggerBuilderExtensions`
+  * AddFakeLogging
+* `Microsoft.Extensions.Logging.ITagCollector`
+  * Add
+* `Microsoft.Extensions.Logging.LoggerEnrichmentOptions`
+  * CaptureStackTraces
+  * IncludeExceptionMessage
+  * MaxStackTraceLength
+  * UseFileInfoForStackTraces
+* `Microsoft.Extensions.Logging.LoggerMessageAttribute`
+* `Microsoft.Extensions.Logging.LoggerMessageHelper`
+  * Stringify
+  * Stringify<TKey,TValue>
+  * ThreadLocalState
+* `Microsoft.Extensions.Logging.LoggerMessageState+ClassifiedTag`
+  * Classifications
+  * Name
+  * Value
+* `Microsoft.Extensions.Logging.LoggerMessageState`
+  * AddClassifiedTag
+  * AddTag
+  * ClassifiedTagArray
+  * ClassifiedTagsCount
+  * Clear
+  * Item
+  * Microsoft.Extensions.Diagnostics.Enrichment.IEnrichmentTagCollector.Add
+  * Microsoft.Extensions.Logging.ITagCollector.Add
+  * RedactedTagArray
+  * ReserveClassifiedTagSpace
+  * ReserveTagSpace
+  * System.Collections.Generic.IEnumerable<System.Collections.Generic.KeyValuePair<System.String,System.Object>>.GetEnumerator
+  * System.Collections.Generic.IReadOnlyCollection<System.Collections.Generic.KeyValuePair<System.String,System.Object>>.Count
+  * System.Collections.IEnumerable.GetEnumerator
+  * TagArray
+  * TagNamePrefix
+  * TagsCount
+  * ToString
+* `Microsoft.Extensions.Logging.LoggerRedactionOptions`
+  * ApplyDiscriminator
+* `Microsoft.Extensions.Logging.LoggingEnrichmentExtensions`
+  * EnableEnrichment
+* `Microsoft.Extensions.Logging.LoggingRedactionExtensions`
+  * EnableRedaction
+* `Microsoft.Extensions.Logging.LogPropertiesAttribute`
+  * OmitReferenceName
+  * SkipNullProperties
+* `Microsoft.Extensions.Logging.LogPropertyIgnoreAttribute`
+* `Microsoft.Extensions.Logging.TagProviderAttribute`
+  * OmitReferenceName
+  * ProviderMethod
+  * ProviderType
+* `Microsoft.Extensions.ObjectPool.DependencyInjectionPoolOptions`
+  * Capacity
+* `Microsoft.Extensions.ObjectPool.IResettable`
+  * TryReset
+* `Microsoft.Extensions.Options.IStartupValidator`
+  * Validate
+* `Microsoft.Extensions.Options.OptionsValidatorAttribute`
+* `Microsoft.Extensions.Options.ValidateEnumeratedItemsAttribute`
+  * Validator
+* `Microsoft.Extensions.Options.ValidateObjectMembersAttribute`
+  * Validator
+* `Microsoft.Extensions.Options.ValidateOptionsResultBuilder`
+  * AddError
+  * AddResult
+  * AddResults
+  * Build
+  * Clear
+* `Microsoft.Extensions.Options.Contextual.IConfigureContextualOptions<TOptions>`
+  * Configure
+* `Microsoft.Extensions.Options.Contextual.IContextualOptionsFactory<TOptions>`
+  * CreateAsync<TContext>
+* `Microsoft.Extensions.Options.Contextual.IContextualOptions<TOptions>`
+  * GetAsync<TContext>
+* `Microsoft.Extensions.Options.Contextual.ILoadContextualOptions<TOptions>`
+  * LoadAsync<TContext>
+* `Microsoft.Extensions.Options.Contextual.INamedContextualOptions<TOptions>`
+  * GetAsync<TContext>
+* `Microsoft.Extensions.Options.Contextual.IOptionsContext`
+  * PopulateReceiver<T>
+* `Microsoft.Extensions.Options.Contextual.IOptionsContextReceiver`
+  * Receive<T>
+* `Microsoft.Extensions.Options.Contextual.IPostConfigureContextualOptions<TOptions>`
+  * PostConfigure<TContext>
+* `Microsoft.Extensions.Options.Contextual.IValidateContextualOptions<TOptions>`
+  * Validate
+* `Microsoft.Extensions.Options.Contextual.NullConfigureContextualOptions`
+  * GetInstance<TOptions>
+* `Microsoft.Extensions.Options.Contextual.OptionsContextAttribute`
+* `Microsoft.Extensions.Time.Testing.FakeTimeProvider`
+  * Advance
+  * AutoAdvanceAmount
+  * CreateTimer
+  * GetTimestamp
+  * GetUtcNow
+  * LocalTimeZone
+  * SetLocalTimeZone
+  * SetUtcNow
+  * Start
+  * TimestampFrequency
+  * ToString
+* `Microsoft.Win32.CommonItemDialog`
+  * AddToRecent
+  * ClientGuid
+  * CustomPlaces
+  * DefaultDirectory
+  * DereferenceLinks
+  * InitialDirectory
+  * OnItemOk
+  * Reset
+  * RootDirectory
+  * RunDialog
+  * ShowHiddenItems
+  * Title
+  * ToString
+  * ValidateNames
+* `Microsoft.Win32.FileDialog`
+  * OnItemOk
+* `Microsoft.Win32.OpenFileDialog`
+  * ForcePreviewPane
+* `Microsoft.Win32.OpenFolderDialog`
+  * FolderName
+  * FolderNames
+  * FolderOk
+  * Multiselect
+  * OnItemOk
+  * Reset
+  * SafeFolderName
+  * SafeFolderNames
+  * ToString
+* `Microsoft.Win32.SaveFileDialog`
+  * CreateTestFile
+* `Polly.ResilienceContextExtensions`
+  * GetRequestMetadata
+  * SetRequestMetadata
+* `System.ArgumentException`
+  * ThrowIfNullOrWhiteSpace
+* `System.ArgumentOutOfRangeException`
+  * ThrowIfEqual<T>
+  * ThrowIfGreaterThan<T>
+  * ThrowIfGreaterThanOrEqual<T>
+  * ThrowIfLessThan<T>
+  * ThrowIfLessThanOrEqual<T>
+  * ThrowIfNegative<T>
+  * ThrowIfNegativeOrZero<T>
+  * ThrowIfNotEqual<T>
+  * ThrowIfZero<T>
+* `System.BinaryData`
+  * FromBytes
+  * FromStream
+  * FromStreamAsync
+  * FromString
+  * IsEmpty
+  * Length
+  * MediaType
+  * WithMediaType
+* `System.Boolean`
+  * System.IParsable<System.Boolean>.Parse
+  * System.IParsable<System.Boolean>.TryParse
+  * System.ISpanParsable<System.Boolean>.Parse
+  * System.ISpanParsable<System.Boolean>.TryParse
+* `System.Byte`
+  * Parse
+  * TryFormat
+  * TryParse
+* `System.Char`
+  * System.IUtf8SpanFormattable.TryFormat
+* `System.ConsoleKey`
+  * None
+* `System.ConsoleModifiers`
+  * None
+* `System.DateOnly`
+  * Deconstruct
+  * TryFormat
+* `System.DateTime`
+  * Deconstruct
+  * TryFormat
+* `System.DateTimeOffset`
+  * Deconstruct
+  * TotalOffsetMinutes
+  * TryFormat
+* `System.Decimal`
+  * Parse
+  * TryFormat
+  * TryParse
+* `System.Double`
+  * DegreesToRadians
+  * Lerp
+  * Parse
+  * RadiansToDegrees
+  * TryFormat
+  * TryParse
+* `System.Enum`
+  * System.ISpanFormattable.TryFormat
+  * TryFormat<TEnum>
+* `System.Environment`
+  * IsPrivilegedProcess
+* `System.FakeLoggerServiceProviderExtensions`
+  * GetFakeLogCollector
+* `System.FakeRedactionServiceProviderExtensions`
+  * GetFakeRedactionCollector
+* `System.GC`
+  * RefreshMemoryLimit
+  * RegisterNoGCRegionCallback
+* `System.Guid`
+  * System.IUtf8SpanFormattable.TryFormat
+  * ToByteArray
+  * TryFormat
+  * TryWriteBytes
+* `System.Half`
+  * DegreesToRadians
+  * Lerp
+  * Parse
+  * RadiansToDegrees
+  * TryFormat
+  * TryParse
+* `System.Int128`
+  * Parse
+  * TryFormat
+  * TryParse
+* `System.Int16`
+  * Parse
+  * TryFormat
+  * TryParse
+* `System.Int32`
+  * Parse
+  * TryFormat
+  * TryParse
+* `System.Int64`
+  * Parse
+  * TryFormat
+  * TryParse
+* `System.IntPtr`
+  * Parse
+  * TryFormat
+  * TryParse
+* `System.IUtf8SpanFormattable`
+  * TryFormat
+* `System.IUtf8SpanParsable<TSelf>`
+  * Parse
+  * TryParse
+* `System.MemoryExtensions`
+  * AsSpan
+  * ContainsAny<T>
+  * ContainsAnyExcept<T>
+  * ContainsAnyExceptInRange<T>
+  * ContainsAnyInRange<T>
+  * Count<T>
+  * IndexOfAny<T>
+  * IndexOfAnyExcept<T>
+  * IndexOfAnyExceptInRange<T>
+  * IndexOfAnyInRange<T>
+  * LastIndexOfAny<T>
+  * LastIndexOfAnyExcept<T>
+  * LastIndexOfAnyExceptInRange<T>
+  * LastIndexOfAnyInRange<T>
+  * Replace<T>
+  * Split
+  * SplitAny
+  * TryWrite
+  * TryWrite<TArg0>
+  * TryWrite<TArg0,TArg1>
+  * TryWrite<TArg0,TArg1,TArg2>
+* `System.OperatingSystem`
+  * IsWasi
+* `System.Random`
+  * GetItems<T>
+  * Shuffle<T>
+* `System.SByte`
+  * Parse
+  * TryFormat
+  * TryParse
+* `System.Single`
+  * DegreesToRadians
+  * Lerp
+  * Parse
+  * RadiansToDegrees
+  * TryFormat
+  * TryParse
+* `System.String`
+  * Format
+  * Format<TArg0>
+  * Format<TArg0,TArg1>
+  * Format<TArg0,TArg1,TArg2>
+  * System.IParsable<System.String>.Parse
+  * System.IParsable<System.String>.TryParse
+  * System.ISpanParsable<System.String>.Parse
+  * System.ISpanParsable<System.String>.TryParse
+* `System.TimeOnly`
+  * Deconstruct
+  * TryFormat
+* `System.TimeProvider`
+  * CreateTimer
+  * GetElapsedTime
+  * GetLocalNow
+  * GetTimestamp
+  * GetUtcNow
+  * LocalTimeZone
+  * System
+  * TimestampFrequency
+* `System.TimeSpan`
+  * TryFormat
+* `System.TimeZoneInfo`
+  * GetSystemTimeZones
+  * TryFindSystemTimeZoneById
+* `System.Type`
+  * GetFunctionPointerCallingConventions
+  * GetFunctionPointerParameterTypes
+  * GetFunctionPointerReturnType
+  * GetOptionalCustomModifiers
+  * GetRequiredCustomModifiers
+  * IsFunctionPointer
+  * IsUnmanagedFunctionPointer
+* `System.UInt128`
+  * Parse
+  * TryFormat
+  * TryParse
+* `System.UInt16`
+  * Parse
+  * TryFormat
+  * TryParse
+* `System.UInt32`
+  * Parse
+  * TryFormat
+  * TryParse
+* `System.UInt64`
+  * Parse
+  * TryFormat
+  * TryParse
+* `System.UIntPtr`
+  * Parse
+  * TryFormat
+  * TryParse
+* `System.Uri`
+  * System.IFormattable.ToString
+  * System.ISpanFormattable.TryFormat
+  * TryFormat
+* `System.Version`
+  * System.IUtf8SpanFormattable.TryFormat
+  * TryFormat
+* `System.Buffers.ArrayBufferWriter<T>`
+  * ResetWrittenCount
+* `System.Buffers.SearchValues`
+  * Create
+* `System.Buffers.SearchValues<T>`
+  * Contains
+* `System.Buffers.Binary.BinaryPrimitives`
+  * ReadInt128BigEndian
+  * ReadInt128LittleEndian
+  * ReadIntPtrBigEndian
+  * ReadIntPtrLittleEndian
+  * ReadUInt128BigEndian
+  * ReadUInt128LittleEndian
+  * ReadUIntPtrBigEndian
+  * ReadUIntPtrLittleEndian
+  * ReverseEndianness
+  * TryReadInt128BigEndian
+  * TryReadInt128LittleEndian
+  * TryReadIntPtrBigEndian
+  * TryReadIntPtrLittleEndian
+  * TryReadUInt128BigEndian
+  * TryReadUInt128LittleEndian
+  * TryReadUIntPtrBigEndian
+  * TryReadUIntPtrLittleEndian
+  * TryWriteInt128BigEndian
+  * TryWriteInt128LittleEndian
+  * TryWriteIntPtrBigEndian
+  * TryWriteIntPtrLittleEndian
+  * TryWriteUInt128BigEndian
+  * TryWriteUInt128LittleEndian
+  * TryWriteUIntPtrBigEndian
+  * TryWriteUIntPtrLittleEndian
+  * WriteInt128BigEndian
+  * WriteInt128LittleEndian
+  * WriteIntPtrBigEndian
+  * WriteIntPtrLittleEndian
+  * WriteUInt128BigEndian
+  * WriteUInt128LittleEndian
+  * WriteUIntPtrBigEndian
+  * WriteUIntPtrLittleEndian
+* `System.Buffers.Text.Base64`
+  * IsValid
+* `System.CodeDom.Compiler.IndentedTextWriter`
+  * FlushAsync
+* `System.Collections.BitArray`
+  * HasAllSet
+  * HasAnySet
+* `System.Collections.Frozen.FrozenDictionary`
+  * ToFrozenDictionary<TKey,TValue>
+  * ToFrozenDictionary<TSource,TKey>
+  * ToFrozenDictionary<TSource,TKey,TElement>
+* `System.Collections.Frozen.FrozenDictionary<TKey,TValue>+Enumerator`
+  * Current
+  * MoveNext
+  * System.Collections.IEnumerator.Current
+  * System.Collections.IEnumerator.Reset
+  * System.IDisposable.Dispose
+* `System.Collections.Frozen.FrozenDictionary<TKey,TValue>`
+  * Comparer
+  * ContainsKey
+  * CopyTo
+  * Count
+  * Empty
+  * GetEnumerator
+  * GetValueRefOrNullRef
+  * Item
+  * Keys
+  * System.Collections.Generic.ICollection<System.Collections.Generic.KeyValuePair<TKey,TValue>>.Add
+  * System.Collections.Generic.ICollection<System.Collections.Generic.KeyValuePair<TKey,TValue>>.Clear
+  * System.Collections.Generic.ICollection<System.Collections.Generic.KeyValuePair<TKey,TValue>>.Contains
+  * System.Collections.Generic.ICollection<System.Collections.Generic.KeyValuePair<TKey,TValue>>.IsReadOnly
+  * System.Collections.Generic.ICollection<System.Collections.Generic.KeyValuePair<TKey,TValue>>.Remove
+  * System.Collections.Generic.IDictionary<TKey,TValue>.Add
+  * System.Collections.Generic.IDictionary<TKey,TValue>.Item
+  * System.Collections.Generic.IDictionary<TKey,TValue>.Keys
+  * System.Collections.Generic.IDictionary<TKey,TValue>.Remove
+  * System.Collections.Generic.IDictionary<TKey,TValue>.Values
+  * System.Collections.Generic.IEnumerable<System.Collections.Generic.KeyValuePair<TKey,TValue>>.GetEnumerator
+  * System.Collections.Generic.IReadOnlyDictionary<TKey,TValue>.Item
+  * System.Collections.Generic.IReadOnlyDictionary<TKey,TValue>.Keys
+  * System.Collections.Generic.IReadOnlyDictionary<TKey,TValue>.Values
+  * System.Collections.ICollection.CopyTo
+  * System.Collections.ICollection.IsSynchronized
+  * System.Collections.ICollection.SyncRoot
+  * System.Collections.IDictionary.Add
+  * System.Collections.IDictionary.Clear
+  * System.Collections.IDictionary.Contains
+  * System.Collections.IDictionary.GetEnumerator
+  * System.Collections.IDictionary.IsFixedSize
+  * System.Collections.IDictionary.IsReadOnly
+  * System.Collections.IDictionary.Item
+  * System.Collections.IDictionary.Keys
+  * System.Collections.IDictionary.Remove
+  * System.Collections.IDictionary.Values
+  * System.Collections.IEnumerable.GetEnumerator
+  * TryGetValue
+  * Values
+* `System.Collections.Frozen.FrozenSet`
+  * ToFrozenSet<T>
+* `System.Collections.Frozen.FrozenSet<T>+Enumerator`
+  * Current
+  * MoveNext
+  * System.Collections.IEnumerator.Current
+  * System.Collections.IEnumerator.Reset
+  * System.IDisposable.Dispose
+* `System.Collections.Frozen.FrozenSet<T>`
+  * Comparer
+  * Contains
+  * CopyTo
+  * Count
+  * Empty
+  * GetEnumerator
+  * IsProperSubsetOf
+  * IsProperSupersetOf
+  * IsSubsetOf
+  * IsSupersetOf
+  * Items
+  * Overlaps
+  * SetEquals
+  * System.Collections.Generic.ICollection<T>.Add
+  * System.Collections.Generic.ICollection<T>.Clear
+  * System.Collections.Generic.ICollection<T>.IsReadOnly
+  * System.Collections.Generic.ICollection<T>.Remove
+  * System.Collections.Generic.IEnumerable<T>.GetEnumerator
+  * System.Collections.Generic.ISet<T>.Add
+  * System.Collections.Generic.ISet<T>.ExceptWith
+  * System.Collections.Generic.ISet<T>.IntersectWith
+  * System.Collections.Generic.ISet<T>.SymmetricExceptWith
+  * System.Collections.Generic.ISet<T>.UnionWith
+  * System.Collections.ICollection.CopyTo
+  * System.Collections.ICollection.IsSynchronized
+  * System.Collections.ICollection.SyncRoot
+  * System.Collections.IEnumerable.GetEnumerator
+  * TryGetValue
+* `System.Collections.Generic.CollectionExtensions`
+  * AddRange<T>
+  * CopyTo<T>
+  * InsertRange<T>
+* `System.Collections.Generic.Dictionary<TKey,TValue>+KeyCollection`
+  * Contains
+* `System.Collections.Generic.EqualityComparer<T>`
+  * Create
+* `System.Collections.Generic.List<T>`
+  * Slice
+* `System.Collections.Generic.PriorityQueue<TElement,TPriority>`
+  * DequeueEnqueue
+* `System.Collections.Generic.SortedDictionary<TKey,TValue>+KeyCollection`
+  * Contains
+* `System.Collections.Immutable.ImmutableArray<T>+Builder`
+  * DrainToImmutable
+* `System.Collections.Immutable.ImmutableArray<T>`
+  * Contains
+* `System.Collections.Immutable.ImmutableHashSet`
+  * Create<T>
+* `System.Collections.Immutable.ImmutableList`
+  * Create<T>
+* `System.Collections.Immutable.ImmutableQueue`
+  * Create<T>
+* `System.Collections.Immutable.ImmutableSortedSet`
+  * Create<T>
+* `System.Collections.Immutable.ImmutableStack`
+  * Create<T>
+* `System.Collections.ObjectModel.ReadOnlyCollection<T>`
+  * Empty
+* `System.Collections.ObjectModel.ReadOnlyDictionary<TKey,TValue>+KeyCollection`
+  * Contains
+* `System.Collections.ObjectModel.ReadOnlyDictionary<TKey,TValue>`
+  * Empty
+* `System.Collections.ObjectModel.ReadOnlyObservableCollection<T>`
+  * Empty
+* `System.ComponentModel.DataAnnotations.AllowedValuesAttribute`
+  * IsValid
+  * Values
+* `System.ComponentModel.DataAnnotations.Base64StringAttribute`
+  * IsValid
+* `System.ComponentModel.DataAnnotations.DeniedValuesAttribute`
+  * IsValid
+  * Values
+* `System.ComponentModel.DataAnnotations.LengthAttribute`
+  * FormatErrorMessage
+  * IsValid
+  * MaximumLength
+  * MinimumLength
+* `System.ComponentModel.DataAnnotations.RangeAttribute`
+  * MaximumIsExclusive
+  * MinimumIsExclusive
+* `System.Data.Common.DbBatchCommand`
+  * CanCreateParameter
+  * CreateParameter
+* `System.Data.SqlTypes.SqlGuid`
+  * System.Runtime.Serialization.ISerializable.GetObjectData
+* `System.Diagnostics.DiagnosticSource`
+  * StartActivity<T>
+  * StopActivity<T>
+  * Write<T>
+* `System.Diagnostics.ProcessStartInfo`
+  * UseCredentialsForNetworkingOnly
+* `System.Diagnostics.StackTrace`
+* `System.Diagnostics.Stopwatch`
+  * ToString
+* `System.Diagnostics.CodeAnalysis.ExperimentalAttribute`
+  * DiagnosticId
+  * UrlFormat
+* `System.Diagnostics.Metrics.IMeterFactory`
+  * Create
+* `System.Diagnostics.Metrics.Instrument`
+  * Tags
+* `System.Diagnostics.Metrics.Instrument<T>`
+* `System.Diagnostics.Metrics.Meter`
+  * CreateCounter<T>
+  * CreateHistogram<T>
+  * CreateObservableCounter<T>
+  * CreateObservableGauge<T>
+  * CreateObservableUpDownCounter<T>
+  * CreateUpDownCounter<T>
+  * Dispose
+  * Scope
+  * Tags
+* `System.Diagnostics.Metrics.MeterFactoryExtensions`
+  * Create
+* `System.Diagnostics.Metrics.MeterOptions`
+  * Name
+  * Scope
+  * Tags
+  * Version
+* `System.Diagnostics.Metrics.ObservableInstrument<T>`
+* `System.Diagnostics.Tracing.EventSource+EventSourcePrimitive`
+* `System.Diagnostics.Tracing.EventSource`
+  * WriteEvent
+* `System.Drawing.Font`
+  * FromLogFont
+  * ToLogFont
+* `System.Drawing.Graphics`
+  * DrawCachedBitmap
+  * DrawString
+  * MeasureCharacterRanges
+  * MeasureString
+* `System.Drawing.Icon`
+  * ExtractIcon
+* `System.Drawing.StockIconId`
+  * Application
+  * AudioFiles
+  * AutoList
+  * ClusteredDrive
+  * Delete
+  * DesktopPC
+  * DeviceAudioPlayer
+  * DeviceCamera
+  * DeviceCellPhone
+  * DeviceVideoCamera
+  * DocumentNoAssociation
+  * DocumentWithAssociation
+  * Drive35
+  * Drive525
+  * DriveBD
+  * DriveCD
+  * DriveDVD
+  * DriveFixed
+  * DriveHDDVD
+  * DriveNet
+  * DriveNetDisabled
+  * DriveRam
+  * DriveRemovable
+  * DriveUnknown
+  * Error
+  * Find
+  * Folder
+  * FolderBack
+  * FolderFront
+  * FolderOpen
+  * Help
+  * ImageFiles
+  * Info
+  * Internet
+  * Key
+  * Link
+  * Lock
+  * MediaAudioDVD
+  * MediaBDR
+  * MediaBDRE
+  * MediaBDROM
+  * MediaBlankCD
+  * MediaBluRay
+  * MediaCDAudio
+  * MediaCDAudioPlus
+  * MediaCDBurn
+  * MediaCDR
+  * MediaCDROM
+  * MediaCDRW
+  * MediaCompactFlash
+  * MediaDVD
+  * MediaDVDPlusR
+  * MediaDVDPlusRW
+  * MediaDVDR
+  * MediaDVDRAM
+  * MediaDVDROM
+  * MediaDVDRW
+  * MediaEnhancedCD
+  * MediaEnhancedDVD
+  * MediaHDDVD
+  * MediaHDDVDR
+  * MediaHDDVDRAM
+  * MediaHDDVDROM
+  * MediaMovieDVD
+  * MediaSmartMedia
+  * MediaSVCD
+  * MediaVCD
+  * MixedFiles
+  * MobilePC
+  * MyNetwork
+  * NetworkConnect
+  * Printer
+  * PrinterFax
+  * PrinterFaxNet
+  * PrinterFile
+  * PrinterNet
+  * Recycler
+  * RecyclerFull
+  * Rename
+  * Server
+  * ServerShare
+  * Settings
+  * Share
+  * Shield
+  * SlowFile
+  * Software
+  * Stack
+  * StuffedFolder
+  * Users
+  * VideoFiles
+  * Warning
+  * World
+  * ZipFile
+* `System.Drawing.StockIconOptions`
+  * Default
+  * LinkOverlay
+  * Selected
+  * ShellIconSize
+  * SmallIcon
+* `System.Drawing.SystemIcons`
+  * GetStockIcon
+* `System.Drawing.Imaging.CachedBitmap`
+  * Dispose
+  * Finalize
+* `System.Drawing.Interop.LOGFONT`
+  * lfCharSet
+  * lfClipPrecision
+  * lfEscapement
+  * lfFaceName
+  * lfHeight
+  * lfItalic
+  * lfOrientation
+  * lfOutPrecision
+  * lfPitchAndFamily
+  * lfQuality
+  * lfStrikeOut
+  * lfUnderline
+  * lfWeight
+  * lfWidth
+* `System.Formats.Asn1.AsnReader`
+  * Clone
+* `System.Formats.Cbor.CborReader`
+  * Reset
+* `System.Globalization.NumberStyles`
+  * AllowBinarySpecifier
+  * BinaryNumber
+* `System.IO.FileAttributes`
+  * None
+* `System.IO.RandomAccess`
+  * FlushToDisk
+* `System.IO.StreamWriter`
+  * FlushAsync
+* `System.IO.TextWriter`
+  * FlushAsync
+* `System.IO.Compression.ZipFile`
+  * CreateFromDirectory
+  * ExtractToDirectory
+* `System.IO.Hashing.Crc32`
+  * GetCurrentHashAsUInt32
+  * HashToUInt32
+* `System.IO.Hashing.Crc64`
+  * GetCurrentHashAsUInt64
+  * HashToUInt64
+* `System.IO.Hashing.XxHash128`
+  * Append
+  * GetCurrentHashAsUInt128
+  * GetCurrentHashCore
+  * Hash
+  * HashToUInt128
+  * Reset
+  * TryHash
+* `System.IO.Hashing.XxHash3`
+  * Append
+  * GetCurrentHashAsUInt64
+  * GetCurrentHashCore
+  * Hash
+  * HashToUInt64
+  * Reset
+  * TryHash
+* `System.IO.Hashing.XxHash32`
+  * GetCurrentHashAsUInt32
+  * HashToUInt32
+* `System.IO.Hashing.XxHash64`
+  * GetCurrentHashAsUInt64
+  * HashToUInt64
+* `System.IO.MemoryMappedFiles.MemoryMappedFile`
+  * CreateFromFile
+* `System.IO.Pipes.PipeOptions`
+  * FirstPipeInstance
+* `System.Linq.Enumerable`
+  * ToDictionary<TKey,TValue>
+* `System.Net.HttpDiagnosticsHttpWebRequestExtensions`
+  * GetRequestMetadata
+  * SetRequestMetadata
+* `System.Net.HttpStatusCode`
+  * UnprocessableContent
+* `System.Net.IPAddress`
+  * System.IFormattable.ToString
+  * System.IParsable<System.Net.IPAddress>.Parse
+  * System.IParsable<System.Net.IPAddress>.TryParse
+  * System.ISpanFormattable.TryFormat
+  * System.ISpanParsable<System.Net.IPAddress>.Parse
+  * System.ISpanParsable<System.Net.IPAddress>.TryParse
+  * System.IUtf8SpanFormattable.TryFormat
+  * TryFormat
+* `System.Net.IPNetwork`
+  * BaseAddress
+  * Contains
+  * Equals
+  * GetHashCode
+  * Parse
+  * PrefixLength
+  * System.IFormattable.ToString
+  * System.IParsable<System.Net.IPNetwork>.Parse
+  * System.IParsable<System.Net.IPNetwork>.TryParse
+  * System.ISpanFormattable.TryFormat
+  * System.ISpanParsable<System.Net.IPNetwork>.Parse
+  * System.ISpanParsable<System.Net.IPNetwork>.TryParse
+  * System.IUtf8SpanFormattable.TryFormat
+  * ToString
+  * TryFormat
+  * TryParse
+* `System.Net.SocketAddress`
+  * Buffer
+  * Equals
+  * GetMaximumAddressSize
+* `System.Net.Http.HttpClientHandler`
+  * MeterFactory
+* `System.Net.Http.HttpDiagnosticsHttpRequestMessageExtensions`
+  * GetRequestMetadata
+  * SetRequestMetadata
+* `System.Net.Http.HttpIOException`
+  * HttpRequestError
+* `System.Net.Http.HttpMethod`
+  * Parse
+* `System.Net.Http.HttpRequestError`
+  * ConfigurationLimitExceeded
+  * ConnectionError
+  * ExtendedConnectNotSupported
+  * HttpProtocolError
+  * InvalidResponse
+  * NameResolutionError
+  * ProxyTunnelError
+  * ResponseEnded
+  * SecureConnectionError
+  * Unknown
+  * UserAuthenticationError
+  * VersionNegotiationError
+* `System.Net.Http.HttpRequestException`
+  * HttpRequestError
+* `System.Net.Http.HttpRequestOptions`
+  * System.Collections.Generic.IReadOnlyCollection<System.Collections.Generic.KeyValuePair<System.String,System.Object>>.Count
+  * System.Collections.Generic.IReadOnlyDictionary<System.String,System.Object>.ContainsKey
+  * System.Collections.Generic.IReadOnlyDictionary<System.String,System.Object>.Item
+  * System.Collections.Generic.IReadOnlyDictionary<System.String,System.Object>.Keys
+  * System.Collections.Generic.IReadOnlyDictionary<System.String,System.Object>.TryGetValue
+  * System.Collections.Generic.IReadOnlyDictionary<System.String,System.Object>.Values
+* `System.Net.Http.HttpResilienceHttpRequestMessageExtensions`
+  * GetResilienceContext
+  * SetResilienceContext
+* `System.Net.Http.SocketsHttpHandler`
+  * MeterFactory
+* `System.Net.Http.Json.HttpClientJsonExtensions`
+  * GetFromJsonAsAsyncEnumerable<TValue>
+* `System.Net.Http.Json.HttpContentJsonExtensions`
+  * ReadFromJsonAsAsyncEnumerable<TValue>
+  * ReadFromJsonAsync
+  * ReadFromJsonAsync<T>
+* `System.Net.Http.Json.JsonContent`
+  * Create
+  * Create<T>
+* `System.Net.Http.Metrics.HttpMetricsEnrichmentContext`
+  * AddCallback
+  * AddCustomTag
+  * Exception
+  * Request
+  * Response
+* `System.Net.Mime.MediaTypeNames+Application`
+  * FormUrlEncoded
+  * JsonPatch
+  * JsonSequence
+  * Manifest
+  * ProblemJson
+  * ProblemXml
+  * Wasm
+  * XmlDtd
+  * XmlPatch
+* `System.Net.Mime.MediaTypeNames+Font`
+  * Collection
+  * Otf
+  * Sfnt
+  * Ttf
+  * Woff
+  * Woff2
+* `System.Net.Mime.MediaTypeNames+Image`
+  * Avif
+  * Bmp
+  * Icon
+  * Png
+  * Svg
+  * Webp
+* `System.Net.Mime.MediaTypeNames+Multipart`
+  * ByteRanges
+  * FormData
+* `System.Net.Mime.MediaTypeNames+Text`
+  * Css
+  * Csv
+  * JavaScript
+  * Markdown
+  * Rtf
+* `System.Net.NetworkInformation.Ping`
+  * SendPingAsync
+* `System.Net.Quic.QuicConnection`
+  * TargetHostName
+* `System.Net.Quic.QuicError`
+  * AlpnInUse
+  * CallbackError
+  * TransportError
+* `System.Net.Quic.QuicException`
+  * TransportErrorCode
+* `System.Net.Quic.QuicStream`
+  * ToString
+* `System.Net.Security.SslClientAuthenticationOptions`
+  * AllowTlsResume
+  * ClientCertificateContext
+* `System.Net.Security.SslClientHelloInfo`
+* `System.Net.Security.SslServerAuthenticationOptions`
+  * AllowTlsResume
+* `System.Net.Security.SslStreamCertificateContext`
+  * IntermediateCertificates
+  * TargetCertificate
+* `System.Net.Sockets.LingerOption`
+  * Equals
+  * GetHashCode
+* `System.Net.Sockets.Socket`
+  * ReceiveFrom
+  * ReceiveFromAsync
+  * SendTo
+  * SendToAsync
+* `System.Net.Sockets.SocketException`
+* `System.Net.Sockets.TcpListener`
+  * Dispose
+* `System.Net.Sockets.UnixDomainSocketEndPoint`
+  * Equals
+  * GetHashCode
+* `System.Net.WebSockets.ClientWebSocket`
+  * SendAsync
+* `System.Numerics.BitOperations`
+  * Crc32C
+* `System.Numerics.Complex`
+  * TryFormat
+* `System.Numerics.IFloatingPointIeee754<TSelf>`
+  * Lerp
+* `System.Numerics.INumberBase<TSelf>`
+  * Parse
+  * System.IUtf8SpanFormattable.TryFormat
+  * System.IUtf8SpanParsable<TSelf>.Parse
+  * System.IUtf8SpanParsable<TSelf>.TryParse
+  * TryParse
+* `System.Numerics.ITrigonometricFunctions<TSelf>`
+  * DegreesToRadians
+  * RadiansToDegrees
+* `System.Numerics.Matrix4x4`
+  * CreateLookAtLeftHanded
+  * CreateLookTo
+  * CreateLookToLeftHanded
+  * CreateOrthographicLeftHanded
+  * CreateOrthographicOffCenterLeftHanded
+  * CreatePerspectiveFieldOfViewLeftHanded
+  * CreatePerspectiveLeftHanded
+  * CreatePerspectiveOffCenterLeftHanded
+  * CreateViewport
+  * CreateViewportLeftHanded
+* `System.Numerics.TotalOrderIeee754Comparer<T>`
+  * Compare
+  * Equals
+  * GetHashCode
+* `System.Numerics.Vector`
+  * Divide<T>
+  * GetElement<T>
+  * Load<T>
+  * LoadAligned<T>
+  * LoadAlignedNonTemporal<T>
+  * LoadUnsafe<T>
+  * Store<T>
+  * StoreAligned<T>
+  * StoreAlignedNonTemporal<T>
+  * StoreUnsafe<T>
+  * ToScalar<T>
+  * WidenLower
+  * WidenUpper
+  * WithElement<T>
+* `System.Numerics.Vector<T>`
+  * AllBitsSet
+* `System.Numerics.Tensors.TensorPrimitives`
+  * Abs
+  * Add
+  * AddMultiply
+  * ConvertToHalf
+  * ConvertToSingle
+  * Cosh
+  * CosineSimilarity
+  * Distance
+  * Divide
+  * Dot
+  * Exp
+  * IndexOfMax
+  * IndexOfMaxMagnitude
+  * IndexOfMin
+  * IndexOfMinMagnitude
+  * Log
+  * Log2
+  * Max
+  * MaxMagnitude
+  * Min
+  * MinMagnitude
+  * Multiply
+  * MultiplyAdd
+  * Negate
+  * Norm
+  * Product
+  * ProductOfDifferences
+  * ProductOfSums
+  * Sigmoid
+  * Sinh
+  * SoftMax
+  * Subtract
+  * Sum
+  * SumOfMagnitudes
+  * SumOfSquares
+  * Tanh
+* `System.Reflection.ConstructorInvoker`
+  * Create
+  * Invoke
+* `System.Reflection.DispatchProxy`
+  * Create
+* `System.Reflection.FieldInfo`
+  * GetModifiedFieldType
+* `System.Reflection.MethodInvoker`
+  * Create
+  * Invoke
+* `System.Reflection.ParameterInfo`
+  * GetModifiedParameterType
+* `System.Reflection.PropertyInfo`
+  * GetModifiedPropertyType
+* `System.Reflection.TypeDelegator`
+  * GetFunctionPointerCallingConventions
+  * GetFunctionPointerParameterTypes
+  * GetFunctionPointerReturnType
+  * IsFunctionPointer
+  * IsUnmanagedFunctionPointer
+* `System.Reflection.Emit.AssemblyBuilder`
+  * DefineDynamicModuleCore
+  * GetDynamicModuleCore
+  * SetCustomAttributeCore
+* `System.Reflection.Emit.ConstructorBuilder`
+  * DefineParameterCore
+  * GetILGeneratorCore
+  * InitLocalsCore
+  * SetCustomAttributeCore
+  * SetImplementationFlagsCore
+* `System.Reflection.Emit.EnumBuilder`
+  * CreateTypeInfoCore
+  * DefineLiteralCore
+  * SetCustomAttributeCore
+  * UnderlyingFieldCore
+* `System.Reflection.Emit.EventBuilder`
+  * AddOtherMethodCore
+  * SetAddOnMethodCore
+  * SetCustomAttributeCore
+  * SetRaiseMethodCore
+  * SetRemoveOnMethodCore
+* `System.Reflection.Emit.FieldBuilder`
+  * SetConstantCore
+  * SetCustomAttributeCore
+  * SetOffsetCore
+* `System.Reflection.Emit.GenericTypeParameterBuilder`
+  * SetBaseTypeConstraintCore
+  * SetCustomAttributeCore
+  * SetGenericParameterAttributesCore
+  * SetInterfaceConstraintsCore
+* `System.Reflection.Emit.ILGenerator`
+* `System.Reflection.Emit.MethodBuilder`
+  * DefineGenericParametersCore
+  * DefineParameterCore
+  * GetILGeneratorCore
+  * InitLocalsCore
+  * SetCustomAttributeCore
+  * SetImplementationFlagsCore
+  * SetSignatureCore
+* `System.Reflection.Emit.ModuleBuilder`
+  * CreateGlobalFunctionsCore
+  * DefineEnumCore
+  * DefineGlobalMethodCore
+  * DefineInitializedDataCore
+  * DefinePInvokeMethodCore
+  * DefineTypeCore
+  * DefineUninitializedDataCore
+  * GetArrayMethodCore
+  * GetFieldMetadataToken
+  * GetMethodMetadataToken
+  * GetSignatureMetadataToken
+  * GetStringMetadataToken
+  * GetTypeMetadataToken
+  * SetCustomAttributeCore
+* `System.Reflection.Emit.ParameterBuilder`
+  * SetCustomAttributeCore
+* `System.Reflection.Emit.PropertyBuilder`
+  * AddOtherMethodCore
+  * SetConstantCore
+  * SetCustomAttributeCore
+  * SetGetMethodCore
+  * SetSetMethodCore
+* `System.Reflection.Emit.TypeBuilder`
+  * AddInterfaceImplementationCore
+  * CreateTypeInfoCore
+  * DefineConstructorCore
+  * DefineDefaultConstructorCore
+  * DefineEventCore
+  * DefineFieldCore
+  * DefineGenericParametersCore
+  * DefineInitializedDataCore
+  * DefineMethodCore
+  * DefineMethodOverrideCore
+  * DefineNestedTypeCore
+  * DefinePInvokeMethodCore
+  * DefinePropertyCore
+  * DefineTypeInitializerCore
+  * DefineUninitializedDataCore
+  * IsCreatedCore
+  * PackingSizeCore
+  * SetCustomAttributeCore
+  * SetParentCore
+  * SizeCore
+* `System.Reflection.Metadata.Ecma335.InstructionEncoder`
+  * Switch
+* `System.Reflection.Metadata.Ecma335.SignatureTypeEncoder`
+  * TypedReference
+* `System.Reflection.Metadata.Ecma335.SwitchInstructionEncoder`
+  * Branch
+* `System.Reflection.PortableExecutable.DllCharacteristics`
+  * ControlFlowGuard
+  * ForceIntegrity
+* `System.Runtime.CompilerServices.CollectionBuilderAttribute`
+  * BuilderType
+  * MethodName
+* `System.Runtime.CompilerServices.InlineArrayAttribute`
+  * Length
+* `System.Runtime.CompilerServices.IsUnmanagedAttribute`
+* `System.Runtime.CompilerServices.NullableAttribute`
+  * NullableFlags
+* `System.Runtime.CompilerServices.NullableContextAttribute`
+  * Flag
+* `System.Runtime.CompilerServices.NullablePublicOnlyAttribute`
+  * IncludesInternals
+* `System.Runtime.CompilerServices.RefSafetyRulesAttribute`
+  * Version
+* `System.Runtime.CompilerServices.RequiresLocationAttribute`
+* `System.Runtime.CompilerServices.ScopedRefAttribute`
+* `System.Runtime.CompilerServices.Unsafe`
+  * BitCast<TFrom,TTo>
+* `System.Runtime.CompilerServices.UnsafeAccessorAttribute`
+  * Kind
+  * Name
+* `System.Runtime.CompilerServices.UnsafeAccessorKind`
+  * Constructor
+  * Field
+  * Method
+  * StaticField
+  * StaticMethod
+* `System.Runtime.InteropServices.CollectionsMarshal`
+  * SetCount<T>
+* `System.Runtime.InteropServices.ComWrappers`
+  * TryGetComInstance
+  * TryGetObject
+* `System.Runtime.InteropServices.ImmutableCollectionsMarshal`
+  * AsArray<T>
+  * AsImmutableArray<T>
+* `System.Runtime.InteropServices.NFloat`
+  * DegreesToRadians
+  * Lerp
+  * Parse
+  * RadiansToDegrees
+  * TryFormat
+  * TryParse
+* `System.Runtime.InteropServices.Marshalling.ComExposedClassAttribute<T>`
+  * GetComInterfaceEntries
+* `System.Runtime.InteropServices.Marshalling.ComInterfaceMarshaller<T>`
+  * ConvertToManaged
+  * ConvertToUnmanaged
+  * Free
+* `System.Runtime.InteropServices.Marshalling.ComInterfaceOptions`
+  * ComObjectWrapper
+  * ManagedObjectWrapper
+  * None
+* `System.Runtime.InteropServices.Marshalling.ComObject`
+  * Finalize
+  * FinalRelease
+  * System.Runtime.InteropServices.IDynamicInterfaceCastable.GetInterfaceImplementation
+  * System.Runtime.InteropServices.IDynamicInterfaceCastable.IsInterfaceImplemented
+  * System.Runtime.InteropServices.Marshalling.IUnmanagedVirtualMethodTableProvider.GetVirtualMethodTableInfoForKey
+* `System.Runtime.InteropServices.Marshalling.ExceptionAsDefaultMarshaller<T>`
+  * ConvertToUnmanaged
+* `System.Runtime.InteropServices.Marshalling.ExceptionAsHResultMarshaller<T>`
+  * ConvertToUnmanaged
+* `System.Runtime.InteropServices.Marshalling.ExceptionAsNaNMarshaller<T>`
+  * ConvertToUnmanaged
+* `System.Runtime.InteropServices.Marshalling.ExceptionAsVoidMarshaller`
+  * ConvertToUnmanaged
+* `System.Runtime.InteropServices.Marshalling.GeneratedComClassAttribute`
+* `System.Runtime.InteropServices.Marshalling.GeneratedComInterfaceAttribute`
+  * Options
+  * StringMarshalling
+  * StringMarshallingCustomType
+* `System.Runtime.InteropServices.Marshalling.IComExposedClass`
+  * GetComInterfaceEntries
+* `System.Runtime.InteropServices.Marshalling.IComExposedDetails`
+  * GetComInterfaceEntries
+* `System.Runtime.InteropServices.Marshalling.IIUnknownCacheStrategy+TableInfo`
+  * ManagedType
+  * Table
+  * ThisPtr
+* `System.Runtime.InteropServices.Marshalling.IIUnknownCacheStrategy`
+  * Clear
+  * ConstructTableInfo
+  * TryGetTableInfo
+  * TrySetTableInfo
+* `System.Runtime.InteropServices.Marshalling.IIUnknownDerivedDetails`
+  * Iid
+  * Implementation
+  * ManagedVirtualMethodTable
+* `System.Runtime.InteropServices.Marshalling.IIUnknownInterfaceDetailsStrategy`
+  * GetComExposedTypeDetails
+  * GetIUnknownDerivedDetails
+* `System.Runtime.InteropServices.Marshalling.IIUnknownInterfaceType`
+  * Iid
+  * ManagedVirtualMethodTable
+* `System.Runtime.InteropServices.Marshalling.IIUnknownStrategy`
+  * CreateInstancePointer
+  * QueryInterface
+  * Release
+* `System.Runtime.InteropServices.Marshalling.IUnknownDerivedAttribute<T,TImpl>`
+  * Iid
+  * Implementation
+  * ManagedVirtualMethodTable
+* `System.Runtime.InteropServices.Marshalling.IUnmanagedVirtualMethodTableProvider`
+  * GetVirtualMethodTableInfoForKey
+* `System.Runtime.InteropServices.Marshalling.SafeHandleMarshaller<T>+ManagedToUnmanagedIn`
+  * Free
+  * FromManaged
+  * ToUnmanaged
+* `System.Runtime.InteropServices.Marshalling.SafeHandleMarshaller<T>+ManagedToUnmanagedOut`
+  * Free
+  * FromUnmanaged
+  * ToManaged
+* `System.Runtime.InteropServices.Marshalling.SafeHandleMarshaller<T>+ManagedToUnmanagedRef`
+  * Free
+  * FromManaged
+  * FromUnmanaged
+  * OnInvoked
+  * ToManagedFinally
+  * ToUnmanaged
+* `System.Runtime.InteropServices.Marshalling.StrategyBasedComWrappers`
+  * ComputeVtables
+  * CreateCacheStrategy
+  * CreateDefaultCacheStrategy
+  * CreateObject
+  * DefaultIUnknownInterfaceDetailsStrategy
+  * DefaultIUnknownStrategy
+  * GetOrCreateInterfaceDetailsStrategy
+  * GetOrCreateIUnknownStrategy
+  * ReleaseObjects
+* `System.Runtime.InteropServices.Marshalling.UniqueComInterfaceMarshaller<T>`
+  * ConvertToManaged
+  * ConvertToUnmanaged
+  * Free
+* `System.Runtime.InteropServices.Marshalling.VirtualMethodTableInfo`
+  * Deconstruct
+  * ThisPointer
+  * VirtualMethodTable
+* `System.Runtime.Intrinsics.Vector128`
+  * Create
+  * Create<T>
+  * CreateScalar<T>
+  * CreateScalarUnsafe<T>
+  * Divide<T>
+  * WidenLower
+  * WidenUpper
+* `System.Runtime.Intrinsics.Vector128<T>`
+  * One
+* `System.Runtime.Intrinsics.Vector256`
+  * Create
+  * Create<T>
+  * CreateScalar<T>
+  * CreateScalarUnsafe<T>
+  * Divide<T>
+  * ToVector512<T>
+  * ToVector512Unsafe<T>
+  * WidenLower
+  * WidenUpper
+* `System.Runtime.Intrinsics.Vector256<T>`
+  * One
+* `System.Runtime.Intrinsics.Vector512`
+  * Abs<T>
+  * Add<T>
+  * AndNot<T>
+  * As<TFrom,TTo>
+  * AsByte<T>
+  * AsDouble<T>
+  * AsInt16<T>
+  * AsInt32<T>
+  * AsInt64<T>
+  * AsNInt<T>
+  * AsNUInt<T>
+  * AsSByte<T>
+  * AsSingle<T>
+  * AsUInt16<T>
+  * AsUInt32<T>
+  * AsUInt64<T>
+  * AsVector<T>
+  * AsVector512<T>
+  * BitwiseAnd<T>
+  * BitwiseOr<T>
+  * Ceiling
+  * ConditionalSelect<T>
+  * ConvertToDouble
+  * ConvertToInt32
+  * ConvertToInt64
+  * ConvertToSingle
+  * ConvertToUInt32
+  * ConvertToUInt64
+  * CopyTo<T>
+  * Create
+  * Create<T>
+  * CreateScalar
+  * CreateScalar<T>
+  * CreateScalarUnsafe
+  * CreateScalarUnsafe<T>
+  * Divide<T>
+  * Dot<T>
+  * Equals<T>
+  * EqualsAll<T>
+  * EqualsAny<T>
+  * ExtractMostSignificantBits<T>
+  * Floor
+  * GetElement<T>
+  * GetLower<T>
+  * GetUpper<T>
+  * GreaterThan<T>
+  * GreaterThanAll<T>
+  * GreaterThanAny<T>
+  * GreaterThanOrEqual<T>
+  * GreaterThanOrEqualAll<T>
+  * GreaterThanOrEqualAny<T>
+  * IsHardwareAccelerated
+  * LessThan<T>
+  * LessThanAll<T>
+  * LessThanAny<T>
+  * LessThanOrEqual<T>
+  * LessThanOrEqualAll<T>
+  * LessThanOrEqualAny<T>
+  * Load<T>
+  * LoadAligned<T>
+  * LoadAlignedNonTemporal<T>
+  * LoadUnsafe<T>
+  * Max<T>
+  * Min<T>
+  * Multiply<T>
+  * Narrow
+  * Negate<T>
+  * OnesComplement<T>
+  * ShiftLeft
+  * ShiftRightArithmetic
+  * ShiftRightLogical
+  * Shuffle
+  * Sqrt<T>
+  * Store<T>
+  * StoreAligned<T>
+  * StoreAlignedNonTemporal<T>
+  * StoreUnsafe<T>
+  * Subtract<T>
+  * Sum<T>
+  * ToScalar<T>
+  * TryCopyTo<T>
+  * Widen
+  * WidenLower
+  * WidenUpper
+  * WithElement<T>
+  * WithLower<T>
+  * WithUpper<T>
+  * Xor<T>
+* `System.Runtime.Intrinsics.Vector512<T>`
+  * AllBitsSet
+  * Count
+  * Equals
+  * GetHashCode
+  * IsSupported
+  * Item
+  * One
+  * ToString
+  * Zero
+* `System.Runtime.Intrinsics.Vector64`
+  * CreateScalar<T>
+  * CreateScalarUnsafe
+  * CreateScalarUnsafe<T>
+  * Divide<T>
+  * WidenLower
+  * WidenUpper
+* `System.Runtime.Intrinsics.Vector64<T>`
+  * One
+* `System.Runtime.Intrinsics.Arm.AdvSimd+Arm64`
+  * VectorTableLookup
+  * VectorTableLookupExtension
+* `System.Runtime.Intrinsics.Arm.AdvSimd`
+  * VectorTableLookup
+  * VectorTableLookupExtension
+* `System.Runtime.Intrinsics.Wasm.PackedSimd`
+  * Abs
+  * Add
+  * AddPairwiseWidening
+  * AddSaturate
+  * AllTrue
+  * And
+  * AndNot
+  * AnyTrue
+  * AverageRounded
+  * Bitmask
+  * BitwiseSelect
+  * Ceiling
+  * CompareEqual
+  * CompareGreaterThan
+  * CompareGreaterThanOrEqual
+  * CompareLessThan
+  * CompareLessThanOrEqual
+  * CompareNotEqual
+  * ConvertNarrowingSaturateSigned
+  * ConvertNarrowingSaturateUnsigned
+  * ConvertToDoubleLower
+  * ConvertToInt32Saturate
+  * ConvertToSingle
+  * ConvertToUInt32Saturate
+  * Divide
+  * Dot
+  * ExtractScalar
+  * Floor
+  * IsSupported
+  * LoadScalarAndInsert
+  * LoadScalarAndSplatVector128
+  * LoadScalarVector128
+  * LoadVector128
+  * LoadWideningVector128
+  * Max
+  * Min
+  * Multiply
+  * MultiplyRoundedSaturateQ15
+  * MultiplyWideningLower
+  * MultiplyWideningUpper
+  * Negate
+  * Not
+  * Or
+  * PopCount
+  * PseudoMax
+  * PseudoMin
+  * ReplaceScalar
+  * RoundToNearest
+  * ShiftLeft
+  * ShiftRightArithmetic
+  * ShiftRightLogical
+  * SignExtendWideningLower
+  * SignExtendWideningUpper
+  * Splat
+  * Sqrt
+  * Store
+  * StoreSelectedScalar
+  * Subtract
+  * SubtractSaturate
+  * Swizzle
+  * Truncate
+  * Xor
+  * ZeroExtendWideningLower
+  * ZeroExtendWideningUpper
+* `System.Runtime.Intrinsics.X86.Avx512BW+VL`
+  * CompareGreaterThan
+  * CompareGreaterThanOrEqual
+  * CompareLessThan
+  * CompareLessThanOrEqual
+  * CompareNotEqual
+  * ConvertToVector128Byte
+  * ConvertToVector128ByteWithSaturation
+  * ConvertToVector128SByte
+  * ConvertToVector128SByteWithSaturation
+  * IsSupported
+  * PermuteVar16x16
+  * PermuteVar16x16x2
+  * PermuteVar8x16
+  * PermuteVar8x16x2
+  * ShiftLeftLogicalVariable
+  * ShiftRightArithmeticVariable
+  * ShiftRightLogicalVariable
+  * SumAbsoluteDifferencesInBlock32
+* `System.Runtime.Intrinsics.X86.Avx512BW+X64`
+  * IsSupported
+* `System.Runtime.Intrinsics.X86.Avx512BW`
+  * Abs
+  * Add
+  * AddSaturate
+  * AlignRight
+  * Average
+  * BlendVariable
+  * BroadcastScalarToVector512
+  * CompareEqual
+  * CompareGreaterThan
+  * CompareGreaterThanOrEqual
+  * CompareLessThan
+  * CompareLessThanOrEqual
+  * CompareNotEqual
+  * ConvertToVector256Byte
+  * ConvertToVector256ByteWithSaturation
+  * ConvertToVector256SByte
+  * ConvertToVector256SByteWithSaturation
+  * ConvertToVector512Int16
+  * ConvertToVector512UInt16
+  * IsSupported
+  * LoadVector512
+  * Max
+  * Min
+  * MultiplyAddAdjacent
+  * MultiplyHigh
+  * MultiplyHighRoundScale
+  * MultiplyLow
+  * PackSignedSaturate
+  * PackUnsignedSaturate
+  * PermuteVar32x16
+  * PermuteVar32x16x2
+  * ShiftLeftLogical
+  * ShiftLeftLogical128BitLane
+  * ShiftLeftLogicalVariable
+  * ShiftRightArithmetic
+  * ShiftRightArithmeticVariable
+  * ShiftRightLogical
+  * ShiftRightLogical128BitLane
+  * ShiftRightLogicalVariable
+  * Shuffle
+  * ShuffleHigh
+  * ShuffleLow
+  * Store
+  * Subtract
+  * SubtractSaturate
+  * SumAbsoluteDifferences
+  * SumAbsoluteDifferencesInBlock32
+  * UnpackHigh
+  * UnpackLow
+* `System.Runtime.Intrinsics.X86.Avx512CD+VL`
+  * DetectConflicts
+  * IsSupported
+  * LeadingZeroCount
+* `System.Runtime.Intrinsics.X86.Avx512CD+X64`
+  * IsSupported
+* `System.Runtime.Intrinsics.X86.Avx512CD`
+  * DetectConflicts
+  * IsSupported
+  * LeadingZeroCount
+* `System.Runtime.Intrinsics.X86.Avx512DQ+VL`
+  * BroadcastPairScalarToVector128
+  * BroadcastPairScalarToVector256
+  * ConvertToVector128Double
+  * ConvertToVector128Int64
+  * ConvertToVector128Int64WithTruncation
+  * ConvertToVector128Single
+  * ConvertToVector128UInt64
+  * ConvertToVector128UInt64WithTruncation
+  * ConvertToVector256Double
+  * ConvertToVector256Int64
+  * ConvertToVector256Int64WithTruncation
+  * ConvertToVector256UInt64
+  * ConvertToVector256UInt64WithTruncation
+  * IsSupported
+  * MultiplyLow
+  * Range
+  * Reduce
+* `System.Runtime.Intrinsics.X86.Avx512DQ+X64`
+  * IsSupported
+* `System.Runtime.Intrinsics.X86.Avx512DQ`
+  * And
+  * AndNot
+  * BroadcastPairScalarToVector512
+  * BroadcastVector128ToVector512
+  * BroadcastVector256ToVector512
+  * ConvertToVector256Single
+  * ConvertToVector512Double
+  * ConvertToVector512Int64
+  * ConvertToVector512Int64WithTruncation
+  * ConvertToVector512UInt64
+  * ConvertToVector512UInt64WithTruncation
+  * ExtractVector128
+  * ExtractVector256
+  * InsertVector128
+  * InsertVector256
+  * IsSupported
+  * MultiplyLow
+  * Or
+  * Range
+  * RangeScalar
+  * Reduce
+  * ReduceScalar
+  * Xor
+* `System.Runtime.Intrinsics.X86.Avx512F+VL`
+  * Abs
+  * AlignRight32
+  * AlignRight64
+  * CompareGreaterThan
+  * CompareGreaterThanOrEqual
+  * CompareLessThan
+  * CompareLessThanOrEqual
+  * CompareNotEqual
+  * ConvertToVector128Byte
+  * ConvertToVector128ByteWithSaturation
+  * ConvertToVector128Double
+  * ConvertToVector128Int16
+  * ConvertToVector128Int16WithSaturation
+  * ConvertToVector128Int32
+  * ConvertToVector128Int32WithSaturation
+  * ConvertToVector128SByte
+  * ConvertToVector128SByteWithSaturation
+  * ConvertToVector128Single
+  * ConvertToVector128UInt16
+  * ConvertToVector128UInt16WithSaturation
+  * ConvertToVector128UInt32
+  * ConvertToVector128UInt32WithSaturation
+  * ConvertToVector128UInt32WithTruncation
+  * ConvertToVector256Double
+  * ConvertToVector256Single
+  * ConvertToVector256UInt32
+  * ConvertToVector256UInt32WithTruncation
+  * Fixup
+  * GetExponent
+  * GetMantissa
+  * IsSupported
+  * Max
+  * Min
+  * PermuteVar2x64x2
+  * PermuteVar4x32x2
+  * PermuteVar4x64
+  * PermuteVar4x64x2
+  * PermuteVar8x32x2
+  * Reciprocal14
+  * ReciprocalSqrt14
+  * RotateLeft
+  * RotateLeftVariable
+  * RotateRight
+  * RotateRightVariable
+  * RoundScale
+  * Scale
+  * ShiftRightArithmetic
+  * ShiftRightArithmeticVariable
+  * Shuffle2x128
+  * TernaryLogic
+* `System.Runtime.Intrinsics.X86.Avx512F+X64`
+  * ConvertScalarToVector128Double
+  * ConvertScalarToVector128Single
+  * ConvertToUInt64
+  * ConvertToUInt64WithTruncation
+  * IsSupported
+* `System.Runtime.Intrinsics.X86.Avx512F`
+  * Abs
+  * Add
+  * AlignRight32
+  * AlignRight64
+  * And
+  * AndNot
+  * BlendVariable
+  * BroadcastScalarToVector512
+  * BroadcastVector128ToVector512
+  * BroadcastVector256ToVector512
+  * Compare
+  * CompareEqual
+  * CompareGreaterThan
+  * CompareGreaterThanOrEqual
+  * CompareLessThan
+  * CompareLessThanOrEqual
+  * CompareNotEqual
+  * CompareNotGreaterThan
+  * CompareNotGreaterThanOrEqual
+  * CompareNotLessThan
+  * CompareNotLessThanOrEqual
+  * CompareOrdered
+  * CompareUnordered
+  * ConvertScalarToVector128Double
+  * ConvertScalarToVector128Single
+  * ConvertToUInt32
+  * ConvertToUInt32WithTruncation
+  * ConvertToVector128Byte
+  * ConvertToVector128ByteWithSaturation
+  * ConvertToVector128Int16
+  * ConvertToVector128Int16WithSaturation
+  * ConvertToVector128SByte
+  * ConvertToVector128SByteWithSaturation
+  * ConvertToVector128UInt16
+  * ConvertToVector128UInt16WithSaturation
+  * ConvertToVector256Int16
+  * ConvertToVector256Int16WithSaturation
+  * ConvertToVector256Int32
+  * ConvertToVector256Int32WithSaturation
+  * ConvertToVector256Int32WithTruncation
+  * ConvertToVector256Single
+  * ConvertToVector256UInt16
+  * ConvertToVector256UInt16WithSaturation
+  * ConvertToVector256UInt32
+  * ConvertToVector256UInt32WithSaturation
+  * ConvertToVector256UInt32WithTruncation
+  * ConvertToVector512Double
+  * ConvertToVector512Int32
+  * ConvertToVector512Int32WithTruncation
+  * ConvertToVector512Int64
+  * ConvertToVector512Single
+  * ConvertToVector512UInt32
+  * ConvertToVector512UInt32WithTruncation
+  * ConvertToVector512UInt64
+  * Divide
+  * DuplicateEvenIndexed
+  * DuplicateOddIndexed
+  * ExtractVector128
+  * ExtractVector256
+  * Fixup
+  * FixupScalar
+  * FusedMultiplyAdd
+  * FusedMultiplyAddNegated
+  * FusedMultiplyAddSubtract
+  * FusedMultiplySubtract
+  * FusedMultiplySubtractAdd
+  * FusedMultiplySubtractNegated
+  * GetExponent
+  * GetExponentScalar
+  * GetMantissa
+  * GetMantissaScalar
+  * InsertVector128
+  * InsertVector256
+  * IsSupported
+  * LoadAlignedVector512
+  * LoadAlignedVector512NonTemporal
+  * LoadVector512
+  * Max
+  * Min
+  * Multiply
+  * MultiplyLow
+  * Or
+  * Permute2x64
+  * Permute4x32
+  * Permute4x64
+  * PermuteVar16x32
+  * PermuteVar16x32x2
+  * PermuteVar2x64
+  * PermuteVar4x32
+  * PermuteVar8x64
+  * PermuteVar8x64x2
+  * Reciprocal14
+  * Reciprocal14Scalar
+  * ReciprocalSqrt14
+  * ReciprocalSqrt14Scalar
+  * RotateLeft
+  * RotateLeftVariable
+  * RotateRight
+  * RotateRightVariable
+  * RoundScale
+  * RoundScaleScalar
+  * Scale
+  * ScaleScalar
+  * ShiftLeftLogical
+  * ShiftLeftLogicalVariable
+  * ShiftRightArithmetic
+  * ShiftRightArithmeticVariable
+  * ShiftRightLogical
+  * ShiftRightLogicalVariable
+  * Shuffle
+  * Shuffle4x128
+  * Sqrt
+  * Store
+  * StoreAligned
+  * StoreAlignedNonTemporal
+  * Subtract
+  * TernaryLogic
+  * UnpackHigh
+  * UnpackLow
+  * Xor
+* `System.Runtime.Intrinsics.X86.Avx512Vbmi+VL`
+  * IsSupported
+  * PermuteVar16x8
+  * PermuteVar16x8x2
+  * PermuteVar32x8
+  * PermuteVar32x8x2
+* `System.Runtime.Intrinsics.X86.Avx512Vbmi+X64`
+  * IsSupported
+* `System.Runtime.Intrinsics.X86.Avx512Vbmi`
+  * IsSupported
+  * PermuteVar64x8
+  * PermuteVar64x8x2
+* `System.Runtime.Intrinsics.X86.X86Base+X64`
+  * DivRem
+* `System.Runtime.Intrinsics.X86.X86Base`
+  * DivRem
+* `System.Security.Cryptography.AesGcm`
+  * TagSizeInBytes
+* `System.Security.Cryptography.AsymmetricAlgorithm`
+  * ExportEncryptedPkcs8PrivateKeyPem
+  * TryExportEncryptedPkcs8PrivateKeyPem
+* `System.Security.Cryptography.AuthenticationTagMismatchException`
+* `System.Security.Cryptography.ECDiffieHellman`
+  * DeriveRawSecretAgreement
+* `System.Security.Cryptography.HashAlgorithmName`
+  * SHA3_256
+  * SHA3_384
+  * SHA3_512
+* `System.Security.Cryptography.HMACSHA3_256`
+  * Dispose
+  * HashCore
+  * HashData
+  * HashDataAsync
+  * HashFinal
+  * HashSizeInBits
+  * HashSizeInBytes
+  * Initialize
+  * IsSupported
+  * Key
+  * TryHashData
+  * TryHashFinal
+* `System.Security.Cryptography.HMACSHA3_384`
+  * Dispose
+  * HashCore
+  * HashData
+  * HashDataAsync
+  * HashFinal
+  * HashSizeInBits
+  * HashSizeInBytes
+  * Initialize
+  * IsSupported
+  * Key
+  * TryHashData
+  * TryHashFinal
+* `System.Security.Cryptography.HMACSHA3_512`
+  * Dispose
+  * HashCore
+  * HashData
+  * HashDataAsync
+  * HashFinal
+  * HashSizeInBits
+  * HashSizeInBytes
+  * Initialize
+  * IsSupported
+  * Key
+  * TryHashData
+  * TryHashFinal
+* `System.Security.Cryptography.RandomNumberGenerator`
+  * GetHexString
+  * GetItems<T>
+  * GetString
+  * Shuffle<T>
+* `System.Security.Cryptography.RSA`
+  * GetMaxOutputSize
+* `System.Security.Cryptography.RSAEncryptionPadding`
+  * OaepSHA3_256
+  * OaepSHA3_384
+  * OaepSHA3_512
+* `System.Security.Cryptography.SafeEvpPKeyHandle`
+  * OpenPrivateKeyFromEngine
+  * OpenPublicKeyFromEngine
+* `System.Security.Cryptography.SHA3_256`
+  * Create
+  * HashData
+  * HashDataAsync
+  * HashSizeInBits
+  * HashSizeInBytes
+  * IsSupported
+  * TryHashData
+* `System.Security.Cryptography.SHA3_384`
+  * Create
+  * HashData
+  * HashDataAsync
+  * HashSizeInBits
+  * HashSizeInBytes
+  * IsSupported
+  * TryHashData
+* `System.Security.Cryptography.SHA3_512`
+  * Create
+  * HashData
+  * HashDataAsync
+  * HashSizeInBits
+  * HashSizeInBytes
+  * IsSupported
+  * TryHashData
+* `System.Security.Cryptography.Shake128`
+  * AppendData
+  * Dispose
+  * GetCurrentHash
+  * GetHashAndReset
+  * HashData
+  * HashDataAsync
+  * IsSupported
+* `System.Security.Cryptography.Shake256`
+  * AppendData
+  * Dispose
+  * GetCurrentHash
+  * GetHashAndReset
+  * HashData
+  * HashDataAsync
+  * IsSupported
+* `System.Security.Cryptography.SP800108HmacCounterKdf`
+  * DeriveBytes
+  * DeriveKey
+  * Dispose
+* `System.Text.Ascii`
+  * Equals
+  * EqualsIgnoreCase
+  * FromUtf16
+  * IsValid
+  * ToLower
+  * ToLowerInPlace
+  * ToUpper
+  * ToUpperInPlace
+  * ToUtf16
+  * Trim
+  * TrimEnd
+  * TrimStart
+* `System.Text.ASCIIEncoding`
+  * TryGetBytes
+  * TryGetChars
+* `System.Text.CompositeFormat`
+  * Format
+  * MinimumArgumentCount
+  * Parse
+* `System.Text.Encoding`
+  * TryGetBytes
+  * TryGetChars
+* `System.Text.RedactionStringBuilderExtensions`
+  * AppendRedacted
+* `System.Text.Rune`
+  * System.IUtf8SpanFormattable.TryFormat
+* `System.Text.StringBuilder`
+  * AppendFormat
+  * AppendFormat<TArg0>
+  * AppendFormat<TArg0,TArg1>
+  * AppendFormat<TArg0,TArg1,TArg2>
+* `System.Text.UTF8Encoding`
+  * TryGetBytes
+  * TryGetChars
+* `System.Text.Json.JsonEncodedText`
+  * Value
+* `System.Text.Json.JsonNamingPolicy`
+  * KebabCaseLower
+  * KebabCaseUpper
+  * SnakeCaseLower
+  * SnakeCaseUpper
+* `System.Text.Json.JsonSerializer`
+  * Deserialize
+  * DeserializeAsync
+  * IsReflectionEnabledByDefault
+  * Serialize
+  * SerializeAsync
+  * SerializeToDocument
+  * SerializeToElement
+  * SerializeToNode
+  * SerializeToUtf8Bytes
+* `System.Text.Json.JsonSerializerOptions`
+  * IsReadOnly
+  * MakeReadOnly
+  * PreferredObjectCreationHandling
+  * TryGetTypeInfo
+  * TypeInfoResolverChain
+  * UnmappedMemberHandling
+* `System.Text.Json.Utf8JsonWriter`
+  * WriteRawValue
+* `System.Text.Json.Nodes.JsonArray`
+  * GetValues<T>
+* `System.Text.Json.Nodes.JsonNode`
+  * DeepClone
+  * DeepEquals
+  * GetElementIndex
+  * GetPropertyName
+  * GetValueKind
+  * ParseAsync
+  * ReplaceWith<T>
+* `System.Text.Json.Serialization.BinaryDataJsonConverter`
+  * Read
+  * Write
+* `System.Text.Json.Serialization.JsonConverter`
+  * Type
+* `System.Text.Json.Serialization.JsonConverterFactory`
+  * Type
+* `System.Text.Json.Serialization.JsonConverter<T>`
+  * Type
+* `System.Text.Json.Serialization.JsonKnownNamingPolicy`
+  * KebabCaseLower
+  * KebabCaseUpper
+  * SnakeCaseLower
+  * SnakeCaseUpper
+* `System.Text.Json.Serialization.JsonNumberEnumConverter<TEnum>`
+  * CanConvert
+  * CreateConverter
+* `System.Text.Json.Serialization.JsonObjectCreationHandling`
+  * Populate
+  * Replace
+* `System.Text.Json.Serialization.JsonObjectCreationHandlingAttribute`
+  * Handling
+* `System.Text.Json.Serialization.JsonSourceGenerationOptionsAttribute`
+  * AllowTrailingCommas
+  * Converters
+  * DefaultBufferSize
+  * DictionaryKeyPolicy
+  * MaxDepth
+  * NumberHandling
+  * PreferredObjectCreationHandling
+  * PropertyNameCaseInsensitive
+  * ReadCommentHandling
+  * UnknownTypeHandling
+  * UnmappedMemberHandling
+  * UseStringEnumConverter
+* `System.Text.Json.Serialization.JsonStringEnumConverter<TEnum>`
+  * CanConvert
+  * CreateConverter
+* `System.Text.Json.Serialization.JsonUnmappedMemberHandling`
+  * Disallow
+  * Skip
+* `System.Text.Json.Serialization.JsonUnmappedMemberHandlingAttribute`
+  * UnmappedMemberHandling
+* `System.Text.Json.Serialization.Metadata.JsonMetadataServices`
+  * CreateMemoryInfo<TElement>
+  * CreateReadOnlyMemoryInfo<TElement>
+  * HalfConverter
+  * Int128Converter
+  * MemoryByteConverter
+  * ReadOnlyMemoryByteConverter
+  * UInt128Converter
+* `System.Text.Json.Serialization.Metadata.JsonPropertyInfo`
+  * ObjectCreationHandling
+* `System.Text.Json.Serialization.Metadata.JsonTypeInfo`
+  * OriginatingResolver
+  * PreferredPropertyObjectCreationHandling
+  * UnmappedMemberHandling
+* `System.Text.Json.Serialization.Metadata.JsonTypeInfoResolver`
+  * WithAddedModifier
+* `System.Text.Unicode.Utf8+TryWriteInterpolatedStringHandler`
+  * AppendFormatted
+  * AppendFormatted<T>
+  * AppendLiteral
+* `System.Text.Unicode.Utf8`
+  * IsValid
+  * TryWrite
+* `System.Threading.CancellationTokenSource`
+  * CancelAsync
+* `System.Threading.ITimer`
+  * Change
+* `System.Threading.PeriodicTimer`
+  * Period
+* `System.Threading.Tasks.ConfigureAwaitOptions`
+  * ContinueOnCapturedContext
+  * ForceYielding
+  * None
+  * SuppressThrowing
+* `System.Threading.Tasks.Parallel`
+  * ForAsync<T>
+* `System.Threading.Tasks.Task`
+  * ConfigureAwait
+  * Delay
+  * WaitAsync
+* `System.Threading.Tasks.TaskToAsyncResult`
+  * Begin
+  * End
+  * End<TResult>
+  * Unwrap
+  * Unwrap<TResult>
+* `System.Threading.Tasks.Task<TResult>`
+  * ConfigureAwait
+  * WaitAsync
+* `System.Windows.Forms.AxHost+State`
+  * Dispose
+* `System.Windows.Forms.ButtonBase+ButtonBaseAccessibleObject`
+  * KeyboardShortcut
+  * Name
+* `System.Windows.Forms.ContextMenuStrip`
+  * OnClosed
+  * OnOpened
+* `System.Windows.Forms.MaskedTextBox`
+  * CreateAccessibilityInstance
+  * OnGotFocus
+  * OnMouseDown
+* `System.Windows.Forms.NativeWindow`
+  * WmDpiChangedAfterParent
+  * WmDpiChangedBeforeParent
+* `System.Windows.Forms.PrintPreviewControl`
+  * OnGotFocus
+  * OnLostFocus
+  * OnMouseDown
+  * OnPaintBackground
+  * TabStop
+* `System.Windows.Forms.RadioButton+RadioButtonAccessibleObject`
+  * KeyboardShortcut
+  * Name
+* `System.Windows.Forms.ScrollBar`
+  * ScaleControl
+* `System.Windows.Forms.TaskDialogLinkClickedEventArgs`
+  * LinkHref
+* `System.Windows.Forms.TaskDialogPage`
+  * EnableLinks
+  * LinkClicked
+  * OnLinkClicked
+* `System.Windows.Forms.TextBox`
+  * CreateAccessibilityInstance
+* `System.Windows.Forms.TextBoxBase`
+  * ContainsNavigationKeyCode
+* `System.Windows.Forms.ToolStripButton`
+  * ProcessDialogKey
+* `System.Xml.XmlResolver`
+  * FileSystemResolver
