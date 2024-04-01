@@ -1,0 +1,19 @@
+# Ignores Visual Studio / Visual Studio Code temporary files, build results, and generated files
+
+# user-specific files
+*.user
+
+# Build results
+[Bb]uild/
+[Dd]ebug/
+[Rr]eleases?/
+[Bb]in/
+[Oo]bj/
+[Ll]ogs/
+[Ll]og/
+
+# Visual Studio / Visual Studio Code user generated settings
+.vs/
+
+# settings file
+アプリケーション設定.json

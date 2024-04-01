@@ -1,0 +1,7 @@
+* text=auto
+
+*.cs     diff=csharp
+*.xml    text merge=text
+*.xaml   text marge=text
+*.sln    merge=union
+*.csproj merge=union
